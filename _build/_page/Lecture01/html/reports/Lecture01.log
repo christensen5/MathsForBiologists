@@ -1,0 +1,64 @@
+Traceback (most recent call last):
+  File "/home/ldiasfer/anaconda3/lib/python3.7/site-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/home/ldiasfer/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 1087, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/ldiasfer/anaconda3/lib/python3.7/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/ldiasfer/anaconda3/lib/python3.7/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/home/ldiasfer/anaconda3/lib/python3.7/asyncio/base_events.py", line 579, in run_until_complete
+    return future.result()
+  File "/home/ldiasfer/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 541, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/home/ldiasfer/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 832, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/home/ldiasfer/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 740, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.animation import FuncAnimation
+%matplotlib notebook
+
+# Fermi-Dirac Distribution
+def fermi(E: float, E_f: float, T: float) -> float:
+    k_b = 8.617 * (10**-5) # eV/K
+    return 1/(np.exp((E - E_f)/(k_b * T)) + 1)
+
+# Temperature values
+T = np.linspace(100, 1000, 10)
+# Get colors from coolwarm colormap
+colors = plt.get_cmap('coolwarm', 10)
+# Create variable reference to plot
+f_d, = ax.plot([], [], linewidth=2.5)
+# Add text annotation and create variable reference
+temp = ax.text(1, 1, '', ha='right', va='top', fontsize=24)
+
+# Animation function
+def animate(i):
+    x = np.linspace(0, 1, 100)
+    y = fermi(x, 0.5, T[i])
+    f_d.set_data(x, y)
+    f_d.set_color(colors(i))
+    temp.set_text(str(int(T[i])) + ' K')
+    temp.set_color(colors(i))
+    
+    # Create animation
+ani = FuncAnimation(fig=fig, func=animate, frames=range(len(T)), interval=500, repeat=True)
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m<ipython-input-2-23f5a1211146>[0m in [0;36m<module>[0;34m[0m
+[1;32m     15[0m [0mcolors[0m [0;34m=[0m [0mplt[0m[0;34m.[0m[0mget_cmap[0m[0;34m([0m[0;34m'coolwarm'[0m[0;34m,[0m [0;36m10[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     16[0m [0;31m# Create variable reference to plot[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 17[0;31m [0mf_d[0m[0;34m,[0m [0;34m=[0m [0max[0m[0;34m.[0m[0mplot[0m[0;34m([0m[0;34m[[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0;34m][0m[0;34m,[0m [0mlinewidth[0m[0;34m=[0m[0;36m2.5[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     18[0m [0;31m# Add text annotation and create variable reference[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     19[0m [0mtemp[0m [0;34m=[0m [0max[0m[0;34m.[0m[0mtext[0m[0;34m([0m[0;36m1[0m[0;34m,[0m [0;36m1[0m[0;34m,[0m [0;34m''[0m[0;34m,[0m [0mha[0m[0;34m=[0m[0;34m'right'[0m[0;34m,[0m [0mva[0m[0;34m=[0m[0;34m'top'[0m[0;34m,[0m [0mfontsize[0m[0;34m=[0m[0;36m24[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mNameError[0m: name 'ax' is not defined
+NameError: name 'ax' is not defined
+
