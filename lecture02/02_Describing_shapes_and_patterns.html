@@ -4,47 +4,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Lecture 02 - Describing shapes and patterns &#8212; My Jupyter Book</title>
+    <title>02 - Describing shapes and patterns &#8212; Maths for Biologists</title>
     
-  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
   <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
   <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
 
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/togglebutton.js"></script>
-    <script type="text/javascript" src="_static/clipboard.min.js"></script>
-    <script type="text/javascript" src="_static/copybutton.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../_static/copybutton.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script type="text/javascript" src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script type="text/javascript" src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -53,9 +53,11 @@
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" type="text/javascript" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <script async="async" type="text/javascript" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="03 - Analysing change, one step at a time" href="../lecture03/03_Analysing_change,_one_step_at_a_time.html" />
+    <link rel="prev" title="01 - Making mathematical statements" href="../lecture01/01_Making_mathematical_statements.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -69,8 +71,68 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-2 bd-sidebar site-navigation show single-page" id="site-navigation">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Maths for Biologists</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Maths for Biologists
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lecture01/01_Making_mathematical_statements.html">
+   01 - Making mathematical statements
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   02   - Describing shapes and patterns
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lecture03/03_Analysing_change,_one_step_at_a_time.html">
+   03   - Analysing change, one step at a time
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/lecture01/Tutorial_01.html">
+   Tutorial 01
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -85,6 +147,15 @@
     </div>
     <div class="col pl-2 topbar-main">
         
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
         
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -94,7 +165,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Lecture02.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/lecture02/02_Describing_shapes_and_patterns.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -119,10 +190,10 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/Lecture02.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/lecture02/02_Describing_shapes_and_patterns.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
+                    src="../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
@@ -208,26 +279,26 @@
         
               <div>
                 
-  <div class="section" id="lecture-02-describing-shapes-and-patterns">
-<h1>Lecture 02   - Describing shapes and patterns<a class="headerlink" href="#lecture-02-describing-shapes-and-patterns" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="describing-shapes-and-patterns">
+<h1>02   - Describing shapes and patterns<a class="headerlink" href="#describing-shapes-and-patterns" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="measuring-angles">
 <h2>Measuring angles<a class="headerlink" href="#measuring-angles" title="Permalink to this headline">¶</a></h2>
 <p>An <strong>angle</strong> is a primitive geometrical element, such as the <em>point</em>, the <em>curve</em> or the <em>plane</em>. It is defined as the figure formed by two line segments that extend from a common point.</p>
 <br />
-<img alt="_images/angle.png" src="_images/angle.png" />
+<img alt="../_images/angle.png" src="../_images/angle.png" />
 <br/>
 <br />
 <p>The two most common units for measuring angles are the <em>degree</em> and the <em>radian</em>.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="cce7ef26-29a7-41b2-8fbb-2401d5159814" name="382796f7-764f-4538-bab0-f1ed46a3786d" type="radio">
-</input><label class="tabbed-label" for="cce7ef26-29a7-41b2-8fbb-2401d5159814">
+<input checked="checked" id="23637c1d-2923-4bde-a1e6-204450235b47" name="25a3e144-bda5-42d4-8fbe-e6acbe06197e" type="radio">
+</input><label class="tabbed-label" for="23637c1d-2923-4bde-a1e6-204450235b47">
 Degrees</label><div class="tabbed-content docutils">
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
 <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-body docutils">
-<img alt="_images/degree.png" src="_images/degree.png" />
+<img alt="../_images/degree.png" src="../_images/degree.png" />
 </div>
 </div>
 </div>
@@ -244,15 +315,15 @@ Degrees</label><div class="tabbed-content docutils">
 </div>
 </div>
 </div>
-<input id="f22e9494-4070-4bd6-af09-32c21a61b713" name="382796f7-764f-4538-bab0-f1ed46a3786d" type="radio">
-</input><label class="tabbed-label" for="f22e9494-4070-4bd6-af09-32c21a61b713">
+<input id="0ae7ce12-e1fc-45dd-adfe-83b9c203d98f" name="25a3e144-bda5-42d4-8fbe-e6acbe06197e" type="radio">
+</input><label class="tabbed-label" for="0ae7ce12-e1fc-45dd-adfe-83b9c203d98f">
 Radians</label><div class="tabbed-content docutils">
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
 <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-body docutils">
-<img alt="_images/Circle_radians.gif" src="_images/Circle_radians.gif" />
+<img alt="../_images/Circle_radians.gif" src="../_images/Circle_radians.gif" />
 </div>
 </div>
 </div>
@@ -295,7 +366,7 @@ Radians</label><div class="tabbed-content docutils">
 <div class="section" id="trigonometric-circle">
 <h2>Trigonometric circle<a class="headerlink" href="#trigonometric-circle" title="Permalink to this headline">¶</a></h2>
 <p>We obtain the trigonometric circle by superimposing a circle of radius <span class="math notranslate nohighlight">\(1\)</span> to the cartesian system of coordinates:</p>
-<img alt="_images/trig_circ.png" src="_images/trig_circ.png" />
+<img alt="../_images/trig_circ.png" src="../_images/trig_circ.png" />
 <p>The projections on the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>-axes have special meanings, if we consider the angle <span class="math notranslate nohighlight">\(\theta\)</span> between the line segment in the radial direction and the <span class="math notranslate nohighlight">\(x\)</span>-axis.</p>
 <p>From the geometric relations on the right triangle (triangle in which one internal angle is a right angle):</p>
 <div class="sphinx-bs container pb-4 docutils">
@@ -303,7 +374,7 @@ Radians</label><div class="tabbed-content docutils">
 <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-body docutils">
-<img alt="_images/right_trig.png" src="_images/right_trig.png" />
+<img alt="../_images/right_trig.png" src="../_images/right_trig.png" />
 </div>
 </div>
 </div>
@@ -362,7 +433,7 @@ Radians</label><div class="tabbed-content docutils">
 <div class="math notranslate nohighlight">
 \[f(x) = \mbox{cos}(x).\]</div>
 <p>Thus, the association of sine and cosine with pure geometric ratios gives place for a more generic definition of functions of real variables. The graphs of these functions are given by:</p>
-<img alt="_images/sin_cos.png" src="_images/sin_cos.png" />
+<img alt="../_images/sin_cos.png" src="../_images/sin_cos.png" />
 <p>All the other known trigonometric relations can also be defined as functions in a similar way. Take for example the tangent of an angle <span class="math notranslate nohighlight">\(\theta\)</span>, which is:</p>
 <div class="math notranslate nohighlight">
 \[tan(\theta) = \displaystyle\frac{\mbox{sin}(\theta)}{\mbox{cos}(\theta)}.\]</div>
@@ -370,7 +441,7 @@ Radians</label><div class="tabbed-content docutils">
 <div class="math notranslate nohighlight">
 \[ f(x) = \mbox{tan}(x) = \displaystyle\frac{\mbox{sin}(x)}{cos(x)}, \ \ \ (\mbox{for }\mbox{cos}(x) \ne 0).\]</div>
 <p>The graph from the tangent function will be given by:</p>
-<img alt="_images/tan.png" src="_images/tan.png" />
+<img alt="../_images/tan.png" src="../_images/tan.png" />
 <p>Note by the above graphs that the functions sine and cosine have patterns that repeat themselves every interval of <span class="math notranslate nohighlight">\(2\pi\)</span>, while the tangent repeats itself every interval of <span class="math notranslate nohighlight">\(\pi\)</span>. We say that these three functions are <strong>periodic</strong>.</p>
 <p>A function <span class="math notranslate nohighlight">\(f(x)\)</span> is periodic if there is a positive constant <span class="math notranslate nohighlight">\(a\)</span>, so that:</p>
 <div class="math notranslate nohighlight">
@@ -582,7 +653,7 @@ Radians</label><div class="tabbed-content docutils">
 <li><p><strong>About the y-axis</strong> - <span class="math notranslate nohighlight">\(y = f(-x)\)</span></p></li>
 </ul>
 <p>The figure below shows these two reflections using the function <span class="math notranslate nohighlight">\(f(x) = (x-1)^2\)</span>.</p>
-<img alt="_images/reflection.png" src="_images/reflection.png" />
+<img alt="../_images/reflection.png" src="../_images/reflection.png" />
 </div>
 </div>
 </div>
@@ -600,7 +671,7 @@ Radians</label><div class="tabbed-content docutils">
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./."
+            path: "./lecture02"
         },
         predefinedOutput: true
     }
@@ -615,15 +686,17 @@ Radians</label><div class="tabbed-content docutils">
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="../lecture01/01_Making_mathematical_statements.html" title="previous page">01 - Making mathematical statements</a>
+    <a class='right-next' id="next-link" href="../lecture03/03_Analysing_change,_one_step_at_a_time.html" title="next page">03   - Analysing change, one step at a time</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
-          By The Jupyter Book community<br/>
+          By Lucas D. Fernandes<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>
@@ -634,7 +707,7 @@ Radians</label><div class="tabbed-content docutils">
     </div>
 
     
-  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     
