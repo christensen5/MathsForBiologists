@@ -277,14 +277,14 @@
 <p>Then by substituting on the second we have:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align} 
-2(3 - \displaystyle\frac{3}{2}y) + y &amp;= 4 \\
+2\left(3 - \displaystyle\frac{3}{2}y \right) + y &amp;= 4 \\
 6 - 3y + y &amp;= 4 \\
 -2y = -2 \\
 y = 1 \end{align}\end{split}\]</div>
 <p>The value of <span class="math notranslate nohighlight">\(x\)</span> shall then be given by:</p>
 <div class="math notranslate nohighlight">
 \[x = 3 - \displaystyle\frac{3}{2}\cdot 1 = 3 - \frac{3}{2} = \frac{3}{2}\]</div>
-<p>We see that the system has a single solution, given by <span class="math notranslate nohighlight">\((\displaystyle\frac{3}{2},1)\)</span>.</p>
+<p>We see that the system has a single solution, given by <span class="math notranslate nohighlight">\(\left(\displaystyle\frac{3}{2},1\right)\)</span>.</p>
 </div>
 <div class="admonition-example admonition">
 <p class="admonition-title">Example</p>
@@ -297,15 +297,15 @@ y = 1 \end{align}\end{split}\]</div>
 <p>Then by substituting on the second we have:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align} 
--4(3 - \displaystyle\frac{3}{2}y) - 6y &amp;= -12 \\
+-4\left(3 - \displaystyle\frac{3}{2}y \right) - 6y &amp;= -12 \\
 -12 + 6y - 6y &amp;= -12 \\
 0 = 0 \end{align}\end{split}\]</div>
 <p>which is just a trivial equation.</p>
 <p>When we look at the equations in our system we see that the second equation is simply a constant multiplied by the first <span class="math notranslate nohighlight">\((Eqn. 2) = -2(Eqn. 1)\)</span>, and thus they should represent the same straight line.</p>
-<p>This system has then infinite solutions which are represented by the set of points <span class="math notranslate nohighlight">\((3 - \frac{3}{2}y,y)\)</span></p>
+<p>This system has then infinite solutions which are represented by the set of points <span class="math notranslate nohighlight">\(\left(3 - \displaystyle\frac{3}{2}y,y\right)\)</span></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Note that writing the solution as <span class="math notranslate nohighlight">\((3 - \frac{3}{2}y,y)\)</span> represents an infinite set of points, since for every real value of <span class="math notranslate nohighlight">\(y\)</span> we would have a different ordered pair. This set of points forms the straight line corresponding to <span class="math notranslate nohighlight">\(2x+3y = 6\)</span>.</p>
+<p>Note that writing the solution as <span class="math notranslate nohighlight">\(\left(3 - \displaystyle\frac{3}{2}y,y\right)\)</span> represents an infinite set of points, since for every real value of <span class="math notranslate nohighlight">\(y\)</span> we would have a different ordered pair. This set of points forms the straight line corresponding to <span class="math notranslate nohighlight">\(2x+3y = 6\)</span>.</p>
 </div>
 </div>
 <p>Solving the system by this method of substitutions, however, can get much more complicated if we have more than two variables. For these cases, we need a simpler method.</p>
@@ -318,9 +318,9 @@ y = 1 \end{align}\end{split}\]</div>
 <p>The examples below show this procedure applied to two systems.</p>
 <div class="admonition-examples admonition">
 <p class="admonition-title">Examples</p>
-<p>(i) <span class="math notranslate nohighlight">\(\begin{cases} 3x + 5y - z = 10 \\ 2x – 2y + 3z = 9 \\ 4x + 2y + -3z = -1 \end{cases}\)</span></p>
+<p>(i) <span class="math notranslate nohighlight">\(\begin{cases} 3x + 5y - z = 10 \\ 2x –  y + 3z = 9 \\ 4x + 2y - 3z = -1 \end{cases}\)</span></p>
 <p>See the solution on this <a class="reference external" href="https://web.microsoftstream.com/video/194b0152-903a-4614-b608-306ce71d9a39">video</a></p>
-<p>(ii) <span class="math notranslate nohighlight">\(\begin{cases} 3x + 5y - z = 10 \\ 2x – 2y + 3z = 9 \\ 4x + 2y + -3z = -1 \end{cases}\)</span></p>
+<p>(ii) <span class="math notranslate nohighlight">\(\begin{cases} x - 3y + z = 4 \\ x – 2y + 3z = 6 \\ 2x - 6y + 2z = 8 \end{cases}\)</span></p>
 <p>See the solution on this <a class="reference external" href="https://web.microsoftstream.com/video/067c8938-5e45-4f08-bf90-783cb125c6f5">video</a></p>
 </div>
 <p>Note that by applying the rules of matrix multiplication, the system <em>(ii)</em> can also be written in the form:</p>
@@ -394,8 +394,10 @@ y = 1 \end{align}\end{split}\]</div>
     (AB)C &amp;= A(BC) \\
     A0 &amp;= 0A = 0 \end{align}\end{split}\]</div>
 </li>
-<li><p>We can also define powers of <span class="math notranslate nohighlight">\(A\)</span>. If <span class="math notranslate nohighlight">\(k\)</span> is a positive integer:<br />
-$<span class="math notranslate nohighlight">\(A^k = A^{k-1}A = AA^{k-1} = A\cdot A\cdot A \cdots A (k\ \mbox{terms))\)</span>$</p></li>
+<li><p>We can also define powers of <span class="math notranslate nohighlight">\(A\)</span>. If <span class="math notranslate nohighlight">\(k\)</span> is a positive integer:</p>
+<div class="math notranslate nohighlight">
+\[A^k = A^{k-1}A = AA^{k-1} = A\cdot A\cdot A \cdots A\ (\mbox{product of}\ k\ \mbox{matrices})\]</div>
+</li>
 </ul>
 </div>
 <div class="section" id="inverse-matrix">
@@ -452,7 +454,7 @@ Y_{t+1} = p X_t \end{align}\end{split}\]</div>
 <p>See that now we have a model with two equations describing the variable class sizes in our population. Moreover, the dynamics of each class depends on the other, so that we have a system of <em>coupled</em> difference equations.</p>
 <p>Interestingly, we can also write this system in matrix form, as:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} X_{t+1}  \\ Y_{t+1} \end{pmatrix} = \begin{pmatrix} 0 &amp; m  \\ p &amp; 0  \end{pmatrix} \begin{pmatrix} X_{t+1}  \\ Y_{t+1} \end{pmatrix}, \quad \mbox{or}\end{split}\]</div>
+\[\begin{split}\begin{pmatrix} X_{t+1}  \\ Y_{t+1} \end{pmatrix} = \begin{pmatrix} 0 &amp; m  \\ p &amp; 0  \end{pmatrix} \begin{pmatrix} X_{t}  \\ Y_{t} \end{pmatrix}, \quad \mbox{or}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\mathbf{n_{t+1}} = P\mathbf{n_{t}},\]</div>
 <p>where the sum of the components of the population vector <span class="math notranslate nohighlight">\(\mathbf{n_{t}}\)</span>, gives the total population (immature plus mature individuals) at time <span class="math notranslate nohighlight">\(t\)</span>: <span class="math notranslate nohighlight">\(N_t = X_t + Y_t\)</span>. The matrix <span class="math notranslate nohighlight">\(P=\begin{pmatrix} 0 &amp; m  \\ p &amp; 0  \end{pmatrix}\)</span> is called <em>projection matrix</em> or <em>Leslie matrix</em>. Multiplying matrix <span class="math notranslate nohighlight">\(P\)</span> by the population vector at time <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(\mathbf{n_{t}}\)</span>, we can project the next population size at time <span class="math notranslate nohighlight">\(t+1\)</span>. Thus, from an initial population state, say <span class="math notranslate nohighlight">\(\mathbf{n_{0}}\)</span>, the projection matrix governs the dynamics of the model.</p>
