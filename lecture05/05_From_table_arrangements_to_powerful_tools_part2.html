@@ -135,6 +135,11 @@
    Tutorial 01
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/lecture05/Tutorial_05.html">
+   Tutorial 05
+  </a>
+ </li>
 </ul>
 
 </nav> <!-- To handle the deprecated key -->
@@ -402,13 +407,13 @@ A\mathbf{v} = \lambda\mathbf{v} \longrightarrow \begin{pmatrix} 1.5 &amp; 2  \\ 
 <br />
 <p>We can also note that the initial population vector can be decomposed into the eigenvectors <span class="math notranslate nohighlight">\(\mathbf{u_1}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{u_2}\)</span> of the matrix <span class="math notranslate nohighlight">\(P\)</span> according to:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{n_0}=\begin{pmatrix} 105  \\ 1 \end{pmatrix} = 5\begin{pmatrix} 20  \\ 1 \end{pmatrix} + \begin{pmatrix} 5  \\ 4 \end{pmatrix} = 5\mathbf{u_1} + \mathbf{u_2}\end{split}\]</div>
+\[\begin{split}\mathbf{n_0}=\begin{pmatrix} 105  \\ 1 \end{pmatrix} = 5\begin{pmatrix} 20  \\ 1 \end{pmatrix} + \begin{pmatrix} 5  \\ -4 \end{pmatrix} = 5\mathbf{u_1} + \mathbf{u_2}\end{split}\]</div>
 <p>We know that to find the population vector for the following step, we have to apply the projection matrix on the current population vector. Thus:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{n_1} = P\mathbf{n_0}= P(5\mathbf{u_1} + \mathbf{u_2})=5P(\mathbf{u_1}) + P(\mathbf{u_2})=5(1.6)\begin{pmatrix} 20  \\ 1 \end{pmatrix} + (-0.1)\begin{pmatrix} 5  \\ -4 \end{pmatrix} = \begin{pmatrix} 159.5  \\ 8.4 \end{pmatrix}\end{split}\]</div>
 <p>If we perform successive applications of <span class="math notranslate nohighlight">\(P\)</span>, we will finally have:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{n_t} = P^t\mathbf{n_0} = P^t(5\mathbf{u_1} + \mathbf{u_2})=5(1.6)^t\begin{pmatrix} 20  \\ 1 \end{pmatrix} + (-0.1)^t\begin{pmatrix} 5  \\ 4 \end{pmatrix}.\end{split}\]</div>
+\[\begin{split}\mathbf{n_t} = P^t\mathbf{n_0} = P^t(5\mathbf{u_1} + \mathbf{u_2})=5(1.6)^t\begin{pmatrix} 20  \\ 1 \end{pmatrix} + (-0.1)^t\begin{pmatrix} 5  \\ -4 \end{pmatrix}.\end{split}\]</div>
 <br />  
 <p>By decomposing into eigenvalues and eigenvectors, we know the behaviour of our population for any time <span class="math notranslate nohighlight">\(t\)</span>, which is much easier than applying <span class="math notranslate nohighlight">\(P\)</span> a number <span class="math notranslate nohighlight">\(t\)</span> of times, or than calculating <span class="math notranslate nohighlight">\(P^t\)</span>. Furthermore, as <span class="math notranslate nohighlight">\(t\rightarrow\infty\)</span> the first term will dominate (with the second term dying out) and the proportions for each age class in this population will be dictated by the vector <span class="math notranslate nohighlight">\(\begin{pmatrix} 20  \\ 1 \end{pmatrix}\)</span> (or, if we divide by the sum of the components: <span class="math notranslate nohighlight">\(\displaystyle\frac{1}{21}\begin{pmatrix} 20  \\ 1 \end{pmatrix} = \begin{pmatrix} 95\%  \\ 5\% \end{pmatrix}\)</span>.</p>
 <p>In general the eigenvector corresponding to the <strong>largest eigenvalue</strong> (also called <em>dominant eigenvalue</em>) of the projection matrix, which is always <em>real</em> and <em>positive</em>, will correspond to the stable age distribution, for which our population vector converges after we wait enough time.</p>
