@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial 02 &#8212; Maths for Biologists</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tutorial 05" href="../lecture05/Tutorial_05.html" />
+    <link rel="prev" title="Tutorial 01" href="../lecture01/Tutorial_01.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Maths for Biologists</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Maths for Biologists
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture01/01_Making_mathematical_statements.html">
+   01 - Making mathematical statements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture02/02_Describing_shapes_and_patterns.html">
+   02   - Describing shapes and patterns
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture03/03_Analysing_change%2C_one_step_at_a_time.html">
+   03   - Analysing change, one step at a time
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture04/04_From_table_arrangements_to_powerful_tools.html">
+   04 - From table arrangements to powerful tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture05/05_From_table_arrangements_to_powerful_tools_part2.html">
+   05 - From table arrangements to powerful tools - part 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture06/06_Analysing_change_continuously.html">
+   06 - Analysing change, continuously
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture07/07_Analysing_change_continuously_part2.html">
+   07 - Analysing change, continuously (Part 2)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../lecture08/08_Calculating_accumulated_change.html">
+   08 - Calculating accumulated change
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lecture01/Tutorial_01.html">
+   Tutorial 01
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tutorial 02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lecture05/Tutorial_05.html">
+   Tutorial 05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lecture06/Tutorial_06.html">
+   Tutorial 06
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/tutorials/lecture02/Tutorial_02.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/tutorials/lecture02/Tutorial_02.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Tutorial 02
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question-1">
+     Question 1
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#simple-equation-for-predator-prey-motion">
+       Simple equation for predator prey motion
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-2">
+   Question 2}
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complex-worms">
+     Complex worms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-3">
+   Question 3
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiplication-rotation-using-complex-numbers">
+     Multiplication &amp; rotation using complex numbers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tutorial 02</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Tutorial 02
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question-1">
+     Question 1
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#simple-equation-for-predator-prey-motion">
+       Simple equation for predator prey motion
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-2">
+   Question 2}
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complex-worms">
+     Complex worms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-3">
+   Question 3
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiplication-rotation-using-complex-numbers">
+     Multiplication &amp; rotation using complex numbers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tutorial-02">
+<h1>Tutorial 02<a class="headerlink" href="#tutorial-02" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="question-1">
+<h2>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="simple-equation-for-predator-prey-motion">
+<h3>Simple equation for predator prey motion<a class="headerlink" href="#simple-equation-for-predator-prey-motion" title="Permalink to this headline">¶</a></h3>
+<p>Oscillations are found throughout many diverse phenomena in ecology and evolution. Predator-prey dynamics are amongst the most well-known as shown in Fig. 1a with data on populations of hares and lynxes. Simple versions of these dynamics are represented by the Lotka-Volterra model Fig. 1b, which produce oscillating solutions for hares and lynxes Fig. 1c. A powerful idea is that the motion of predator-prey (and many other similar systems) can be represented as different projections of motion on a circle as shown in Fig. 1d. Why we would want to do this is explored in this tutorial and how using the concept of complex numbers is the most natural and compact way to describe circular motion.</p>
+<p><img alt="Predator-Prey oscillations" src="../../_images/Fig1.jpg" /></p>
+<p>The plot of <span class="math notranslate nohighlight">\(X\)</span> vs <span class="math notranslate nohighlight">\(Y\)</span> is called a <em>phase plane</em> and shows the behaviour is very well-represented by simple sinusoidal behaviour for prey <span class="math notranslate nohighlight">\(X\)</span> and predator <span class="math notranslate nohighlight">\(Y\)</span>, about some average value <span class="math notranslate nohighlight">\(X^*\)</span> and <span class="math notranslate nohighlight">\(Y^*\)</span> for predator and prey respectively:</p>
+<p>\begin{eqnarray}\label{Eqn:XY}</p>
+<p>X(t) &amp;=&amp; X^<em>+R_1\cos⁡(\omega t-\phi) \tag{1}\
+Y(t) &amp;=&amp; Y^</em>+R_2  \sin(\omega t-\phi) \tag{2}
+\end{eqnarray}</p>
+<p>where <span class="math notranslate nohighlight">\(\omega = 2\pi/T\)</span> is the <em>angular velocity</em> of the oscillations, where <span class="math notranslate nohighlight">\(T\)</span> is the period. If we assume the predator natural rate of death is the same as rate of growth of prey and that the predator is <span class="math notranslate nohighlight">\(100\%\)</span> efficient in gaining energy for growth from death of prey due to predation, then it turns out <span class="math notranslate nohighlight">\(R_1=R_2\)</span>; if we let <span class="math notranslate nohighlight">\(x(t)=X(t)-X^*\)</span> and <span class="math notranslate nohighlight">\(y(t)=Y(t)-Y^*\)</span>, be the number of excess prey and predators, then our equation of motion is</p>
+<p>\begin{eqnarray}\label{Eqn:xy}</p>
+<p>x(t) &amp;=&amp; R\cos(\omega t-\phi) \tag{3}\
+y(t) &amp;=&amp; R\sin(\omega t-\phi) \tag{4}.
+\end{eqnarray}
+an example of this is shown in Fig. 1.</p>
+<p><strong>a)</strong> With reference to Fig. 1d, verify that for each of the times <span class="math notranslate nohighlight">\(t=0,1,2,3,…8\)</span> years the values of <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> match their corresponding values on the <span class="math notranslate nohighlight">\(x-y\)</span> plane and that as time progresses the motion is along the circumference of the circle. Which direction is the motion on the circle: clockwise or anti-clockwise? What is the relationship of <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> with respect to the motion on the circle?</p>
+<p><strong>b)</strong> Reproduce Fig.1d, by plotting plot <span class="math notranslate nohighlight">\(x(t)\)</span>  vs <span class="math notranslate nohighlight">\(t\)</span>  &amp; <span class="math notranslate nohighlight">\(y(t)\)</span> vs <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(x(t)\)</span> vs <span class="math notranslate nohighlight">\(y(t)\)</span> for times <span class="math notranslate nohighlight">\(t=0,1,2,3,…8\)</span> years for <span class="math notranslate nohighlight">\(\omega=\pi/4\)</span>  years<span class="math notranslate nohighlight">\(^{-1}\)</span> with <span class="math notranslate nohighlight">\(R=1\)</span> &amp; <span class="math notranslate nohighlight">\(\phi=\pm\pi/4\)</span> and label each point with their corresponding value of <span class="math notranslate nohighlight">\(t\)</span>. What does changing the phase <span class="math notranslate nohighlight">\(\phi\)</span> do?</p>
+<p><strong>c)</strong> Repeat for <span class="math notranslate nohighlight">\(\omega=\pi/2\)</span>, remembering to label points with time <span class="math notranslate nohighlight">\(t\)</span>.  What does doubling the rate <span class="math notranslate nohighlight">\(\omega\)</span> do?</p>
+<p><strong>d)</strong> By setting <span class="math notranslate nohighlight">\(t=0\)</span> in Eqns.(3) and (4) write down the initial condition <span class="math notranslate nohighlight">\(x_0=x(0)\)</span>  &amp; <span class="math notranslate nohighlight">\(y_0=y(0)\)</span> and mark on the plot for <span class="math notranslate nohighlight">\(\phi=\pi/4\)</span>, the initial value <span class="math notranslate nohighlight">\((x_0,y_0)\)</span> on the plane. What do you notice? Is the initial angle of the point <span class="math notranslate nohighlight">\(\pi/4\)</span> or <span class="math notranslate nohighlight">\(-\pi/4\)</span>?</p>
+<p><strong>e)</strong> Divide <span class="math notranslate nohighlight">\(y_0\)</span> by <span class="math notranslate nohighlight">\(x_0\)</span> to show that</p>
+<p>\begin{equation*}
+\phi=-\tan^{-1}⁡\left(\frac{y_0}{x_0} \right) \tag{5}
+\end{equation*}</p>
+<p>where <span class="math notranslate nohighlight">\(\tan^{-1}\)</span> is the inverse of the tangent function <span class="math notranslate nohighlight">\(\tan\)</span>, such that <span class="math notranslate nohighlight">\(\theta = \tan^{-1}(\tan(\theta))\)</span>.</p>
+<p><strong>f)</strong> Now for population dynamics, <span class="math notranslate nohighlight">\(\theta\)</span> represents the phase of the predator-prey cycle, which for a pure sinusoidal behaviour increases linearly in time, <span class="math notranslate nohighlight">\(\theta=\omega t\)</span>. Estimate <span class="math notranslate nohighlight">\(T\)</span> from the graph of Lynx-Hare dynamics (to nearest year), and given the relationship between <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(\omega\)</span> given above calculate <span class="math notranslate nohighlight">\(\omega\)</span> and state the units of <span class="math notranslate nohighlight">\(\omega\)</span>.</p>
+<p><strong>g)</strong> Show that the equations of motion (Eqns.(3) and (4)) obey the implicit equation for a circle</p>
+<p>\begin{equation*}
+x^2 (t)+y^2 (t)=R^2 \tag{6}
+\end{equation*}</p>
+<p>(Hint: <span class="math notranslate nohighlight">\(\sin^2(\theta)+\cos^2(\theta)=1\)</span>). What is the significance of this result?</p>
+<p><strong>h)</strong> If at <span class="math notranslate nohighlight">\(t=0\)</span> there are an excess of <span class="math notranslate nohighlight">\(80\)</span> hares and <span class="math notranslate nohighlight">\(60\)</span> lynxes, calculate a prediction of the number of excess hares and lynxes at time <span class="math notranslate nohighlight">\(t=15\)</span> years, using the above equations. Your answer should be negative — why is that ok?</p>
+<p><strong>i)</strong> If at some time <span class="math notranslate nohighlight">\(t\)</span> the excess number of lynxes is <span class="math notranslate nohighlight">\(10\)</span> calculate the possible number of excess hares (to the nearest integer) assuming this circular model is correct. Can you calculate from this information the time <span class="math notranslate nohighlight">\(t\)</span>? Discuss what extra information you would need to determine the number of hares and the time of observation (Hint: your diagrams of the \textit{phase portrait} (part a&amp;b) should provide a clue).</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="question-2">
+<h1>Question 2}<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="complex-worms">
+<h2>Complex worms<a class="headerlink" href="#complex-worms" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Guide the worm out of the maze!" src="../../_images/Fig2.jpg" /></p>
+<p>Imagine a worm placed in a 2D maze. They are intelligent worms that happen to understand just two mathematical instructions for each move at a time:</p>
+<ol class="simple">
+<li><p>crawl a distance <span class="math notranslate nohighlight">\(x\)</span></p></li>
+<li><p>then rotate <span class="math notranslate nohighlight">\(90^\circ\)</span> or <span class="math notranslate nohighlight">\(\pi/2\)</span> radians (anti-clockwise) and then crawl a distance <span class="math notranslate nohighlight">\(y\)</span></p></li>
+</ol>
+<p>in other words they move like the Knight chess piece, except with arbitrary lengths <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> of the ``capital L’’.</p>
+<p><strong>a)</strong> Starting at the red square and ending at the green square, your task is to write down the list of instructions for each step in turn, which will navigate the worm through this maze, where for each step you specify <span class="math notranslate nohighlight">\(x+iy\)</span>  where <span class="math notranslate nohighlight">\(i\)</span> indicates ``rotate by <span class="math notranslate nohighlight">\(90^\circ\)</span>’’. For a given path you want to specify the minimal number of steps. \
+(N.B. assume the worm only moves in whole squares (<span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are integers) and that they can move left/right and up/down(i.e. <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> can take negative values).
+(Hint: 1st move I would suggest is <span class="math notranslate nohighlight">\(4+i\times1=4+i\)</span>).</p>
+<p><strong>b)</strong> Given your solution, what do you notice if you ``sum’’ any two adjacent steps by the rule</p>
+<div class="math notranslate nohighlight">
+\[(x_1+iy_1)+(x_2+iy_2)=(x_1+x_2)+i(y_1+y_2)\]</div>
+<p><strong>c)</strong> Add up all the steps using this addition rule – what do you find?</p>
+<p><strong>d)</strong> A new species of worm is discovered that follows two different sets of instructions:</p>
+<ol class="simple">
+<li><p>rotate an angle <span class="math notranslate nohighlight">\(\theta\)</span> (relative to the <span class="math notranslate nohighlight">\(x\)</span>-axis or horizontal)</p></li>
+<li><p>jump a distance <span class="math notranslate nohighlight">\(r\)</span> in that direction</p></li>
+</ol>
+<p>which is communicated by the mathematical instruction <span class="math notranslate nohighlight">\(re^{i\theta}\)</span>. If this worm follows the same path as the worm of the previous species, what are the set of instructions you would need to supply? \
+(N.B. This species of worm only understands radians, not degrees!)\
+(Hint: use your trigonometric skills! And you need only provide answer to <span class="math notranslate nohighlight">\(1\)</span> d.p.)</p>
+<p><strong>e)</strong> If the worm jumps to the exit in <span class="math notranslate nohighlight">\(1\)</span> step what instruction would you provide?</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="question-3">
+<h1>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="multiplication-rotation-using-complex-numbers">
+<h2>Multiplication &amp; rotation using complex numbers<a class="headerlink" href="#multiplication-rotation-using-complex-numbers" title="Permalink to this headline">¶</a></h2>
+<p>The previous question has introduced the idea that one way to describe points in a plane, is to use a new type of number called <em>complex numbers</em> (a better name might be 2D numbers for 2 dimensional), where <span class="math notranslate nohighlight">\(i\)</span> represents a rotation by <span class="math notranslate nohighlight">\(90^\circ\)</span> (<span class="math notranslate nohighlight">\(\pi/2\)</span> radians) – by convention anti-clockwise.</p>
+<p>(For historical reasons these are called <em>imaginary</em> numbers — though there is nothing imaginary about them!)</p>
+<p><strong>a)</strong> Can you solve the equation <span class="math notranslate nohighlight">\(z^2=-1\)</span> using real numbers? Why not?</p>
+<p><strong>b)</strong> Given intuition from the previous question (Q2) that <span class="math notranslate nohighlight">\(i\)</span> represents a rotation <span class="math notranslate nohighlight">\(90^\circ\)</span> (<span class="math notranslate nohighlight">\(\pi/2\)</span> radians), what is <span class="math notranslate nohighlight">\(i\times i=i^2=?\)</span> Hence, what is <span class="math notranslate nohighlight">\(\sqrt{-1}\)</span>? Solve <span class="math notranslate nohighlight">\(z^2=-1\)</span> using complex numbers.</p>
+<p><strong>c)</strong> Solve i) <span class="math notranslate nohighlight">\((z-1)^2=-1\)</span> and ii) <span class="math notranslate nohighlight">\((z-2)^2=-4\)</span> using complex numbers.</p>
+<p><strong>d)</strong> Given two complex numbers <span class="math notranslate nohighlight">\(z=a+ib\)</span> and <span class="math notranslate nohighlight">\(w=c+id\)</span>, multiply them by using the normal rules of multiplying out brackets, but in addition, using the rule just discovered that <span class="math notranslate nohighlight">\(i^2=-1\)</span> to show
+$<span class="math notranslate nohighlight">\(zw = ac-bd +i(ad + bc).\)</span>$</p>
+<p><strong>e)</strong> Let the complex number <span class="math notranslate nohighlight">\(u(\theta)=\cos\theta⁡+i\sin\theta\)</span>. Calculate <span class="math notranslate nohighlight">\(uz\)</span>, for <span class="math notranslate nohighlight">\(\theta=\pi/4\)</span>, using the complex number representation of each of the vectors below and sketch where they lie on the <span class="math notranslate nohighlight">\(x\)</span> - <span class="math notranslate nohighlight">\(y\)</span> plane (also called the real-imaginary plane):</p>
+<p>\begin{equation*}
+z=\begin{pmatrix}1 \ 0 \end{pmatrix}; z=\begin{pmatrix} 0 \ 1 \end{pmatrix}; z=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \ 1 \end{pmatrix}
+\end{equation*}</p>
+<p>What does the complex number <span class="math notranslate nohighlight">\(u(\theta=\pi/4)\)</span> do?</p>
+<p><strong>f)</strong> Repeat above for <span class="math notranslate nohighlight">\(zu\)</span>. What do you notice – what is the difference between post- or pre-multiplication of a complex number?</p>
+<p><strong>g)</strong> Complex numbers provide a simple and compact way of describing rotations, in particular in their polar-form <span class="math notranslate nohighlight">\(re^{i\theta}\)</span>; the connection between the polar form of a complex number of it’s Cartesian form is found by Euler’s formula:</p>
+<p>\begin{equation}
+e^{i\theta} = \cos{\theta} +i\sin{\theta}.
+\end{equation}</p>
+<p>Use Euler’s formula to show that Eqn. 3 can be expressed as follows</p>
+<p>\begin{equation}
+z(t)=Re^{i(\omega t-\phi)}
+\end{equation}</p>
+<p>where <span class="math notranslate nohighlight">\(z(t) = x(t)+iy(t)\)</span>, and <span class="math notranslate nohighlight">\(\phi\)</span> is as given by Eqn. 5.
+\item By setting <span class="math notranslate nohighlight">\(t=0\)</span> show that this can be expressed explicitly in terms of the initial condition <span class="math notranslate nohighlight">\(z(0)=z_0=x_0+iy_0\)</span>, using your expressions for <span class="math notranslate nohighlight">\(x_0\)</span> and <span class="math notranslate nohighlight">\(y_0\)</span> derived in Q1d:</p>
+<p>\begin{equation}
+z(t) = z_0e^{i\omega t}
+\end{equation}</p>
+<p>\item Using your estimate of <span class="math notranslate nohighlight">\(\omega\)</span> from Q1 use this last equation to predict the excess number of hares and lynxes at time <span class="math notranslate nohighlight">\(t=15\)</span> years, given at <span class="math notranslate nohighlight">\(t=0\)</span> there are an excess of <span class="math notranslate nohighlight">\(80\)</span> hares and <span class="math notranslate nohighlight">\(60\)</span> lynxes. Your answer should agree with Q1h.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./tutorials/lecture02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../lecture01/Tutorial_01.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Tutorial 01</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../lecture05/Tutorial_05.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tutorial 05</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Lucas D. Fernandes (adapted by Alexander Kier Christensen<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
