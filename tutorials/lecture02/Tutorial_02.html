@@ -378,16 +378,16 @@
 <p>Oscillations are found throughout many diverse phenomena in ecology and evolution. Predator-prey dynamics are amongst the most well-known as shown in Fig. 1a with data on populations of hares and lynxes. Simple versions of these dynamics are represented by the Lotka-Volterra model Fig. 1b, which produce oscillating solutions for hares and lynxes Fig. 1c. A powerful idea is that the motion of predator-prey (and many other similar systems) can be represented as different projections of motion on a circle as shown in Fig. 1d. Why we would want to do this is explored in this tutorial and how using the concept of complex numbers is the most natural and compact way to describe circular motion.</p>
 <p><img alt="Predator-Prey oscillations" src="../../_images/Fig1.jpg" /></p>
 <p>The plot of <span class="math notranslate nohighlight">\(X\)</span> vs <span class="math notranslate nohighlight">\(Y\)</span> is called a <em>phase plane</em> and shows the behaviour is very well-represented by simple sinusoidal behaviour for prey <span class="math notranslate nohighlight">\(X\)</span> and predator <span class="math notranslate nohighlight">\(Y\)</span>, about some average value <span class="math notranslate nohighlight">\(X^*\)</span> and <span class="math notranslate nohighlight">\(Y^*\)</span> for predator and prey respectively:</p>
-<p>\begin{gather*}</p>
-<p>X(t) &amp;=&amp; X^<em>+R_1\cos⁡(\omega t-\phi) \tag{1}\
-Y(t) &amp;=&amp; Y^</em>+R_2  \sin(\omega t-\phi) \tag{2}
-\end{gather*}</p>
+<div class="math notranslate nohighlight">
+\[ X(t) = X^*+R_1\cos⁡(\omega t-\phi) \tag{1} \]</div>
+<div class="math notranslate nohighlight">
+\[ Y(t) = Y^*+R_2  \sin(\omega t-\phi) \tag{2} \]</div>
 <p>where <span class="math notranslate nohighlight">\(\omega = 2\pi/T\)</span> is the <em>angular velocity</em> of the oscillations, where <span class="math notranslate nohighlight">\(T\)</span> is the period. If we assume the predator natural rate of death is the same as rate of growth of prey and that the predator is <span class="math notranslate nohighlight">\(100\%\)</span> efficient in gaining energy for growth from death of prey due to predation, then it turns out <span class="math notranslate nohighlight">\(R_1=R_2\)</span>; if we let <span class="math notranslate nohighlight">\(x(t)=X(t)-X^*\)</span> and <span class="math notranslate nohighlight">\(y(t)=Y(t)-Y^*\)</span>, be the number of excess prey and predators, then our equation of motion is</p>
-<p>\begin{gather*}</p>
-<p>x(t) &amp;=&amp; R\cos(\omega t-\phi) \tag{3}\
-y(t) &amp;=&amp; R\sin(\omega t-\phi) \tag{4}.
-\end{gather*}
-an example of this is shown in Fig. 1.</p>
+<div class="math notranslate nohighlight">
+\[ x(t) = R\cos(\omega t-\phi) \tag{3} \]</div>
+<div class="math notranslate nohighlight">
+\[  y(t) = R\sin(\omega t-\phi) \tag{4}. \]</div>
+<p>an example of this is shown in Fig. 1.</p>
 <p><strong>a)</strong> With reference to Fig. 1d, verify that for each of the times <span class="math notranslate nohighlight">\(t=0,1,2,3,…8\)</span> years the values of <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> match their corresponding values on the <span class="math notranslate nohighlight">\(x-y\)</span> plane and that as time progresses the motion is along the circumference of the circle. Which direction is the motion on the circle: clockwise or anti-clockwise? What is the relationship of <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> with respect to the motion on the circle?</p>
 <p><strong>b)</strong> Reproduce Fig.1d, by plotting plot <span class="math notranslate nohighlight">\(x(t)\)</span>  vs <span class="math notranslate nohighlight">\(t\)</span>  &amp; <span class="math notranslate nohighlight">\(y(t)\)</span> vs <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(x(t)\)</span> vs <span class="math notranslate nohighlight">\(y(t)\)</span> for times <span class="math notranslate nohighlight">\(t=0,1,2,3,…8\)</span> years for <span class="math notranslate nohighlight">\(\omega=\pi/4\)</span>  years<span class="math notranslate nohighlight">\(^{-1}\)</span> with <span class="math notranslate nohighlight">\(R=1\)</span> &amp; <span class="math notranslate nohighlight">\(\phi=\pm\pi/4\)</span> and label each point with their corresponding value of <span class="math notranslate nohighlight">\(t\)</span>. What does changing the phase <span class="math notranslate nohighlight">\(\phi\)</span> do?</p>
 <p><strong>c)</strong> Repeat for <span class="math notranslate nohighlight">\(\omega=\pi/2\)</span>, remembering to label points with time <span class="math notranslate nohighlight">\(t\)</span>.  What does doubling the rate <span class="math notranslate nohighlight">\(\omega\)</span> do?</p>
