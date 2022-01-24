@@ -575,9 +575,9 @@ plt.savefig('log_base_02.png')
 # When $\Delta = 0$ there are two real **identical** roots for the polynomial function.  
 #   
 # ```{admonition} Examples
-# Consider the function  $y = 0.5 x^2 - x -0.5$. We have:  
+# Consider the function  $y = 0.5 x^2 - x +0.5$. We have:  
 #   
-#   $$\Delta = (-1)^2 - 4(0.5)(-0.5) = 1 -1 = 0.$$  
+#   $$\Delta = (-1)^2 - 4(0.5)(0.5) = 1 -1 = 0.$$  
 #   
 #   The roots will then be given by:  
 #     
@@ -601,7 +601,7 @@ plt.savefig('log_base_02.png')
 # When $\Delta < 0$ there are no real roots for the polynomial function, since the square root of a negative number is not defined for real numbers.  
 #   
 #   ```{admonition} Examples
-# The graph on the left corresponds to the function  $y = 0.5 x^2 - x + 0.5$. We see that the curve does not cross the $x$-axis at any point, showing there is no real root for this function.  
+# The graph on the left corresponds to the function  $y = 0.5 x^2 - x + 1$. We see that the curve does not cross the $x$-axis at any point, showing there is no real root for this function.  
 # 
 # ``` 
 #   

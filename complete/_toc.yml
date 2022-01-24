@@ -1,10 +1,8 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
-- file: intro
-
-- part: Lectures 
-  chapters:
+format: jb-book
+root: intro
+parts:
+  - caption: Lectures 
+    chapters:
     - file: lecture01/01_Making_mathematical_statements
     - file: lecture02/02_Describing_shapes_and_patterns
     - file: lecture03/03_Analysing_change,_one_step_at_a_time
@@ -13,10 +11,9 @@
     - file: lecture06/06_Analysing_change_continuously.ipynb
     - file: lecture07/07_Analysing_change_continuously_part2.ipynb
     - file: lecture08/08_Calculating_accumulated_change.ipynb
-
-
-- part: Tutorials
-  chapters:
+  - caption: Tutorials
+    chapters:
     - file: tutorials/lecture01/Tutorial_01.ipynb
+    - file: tutorials/lecture02/Tutorial_02.ipynb
     - file: tutorials/lecture05/Tutorial_05.ipynb
     - file: tutorials/lecture06/Tutorial_06.ipynb
