@@ -378,30 +378,32 @@
 <p>Oscillations are found throughout many diverse phenomena in ecology and evolution. Predator-prey dynamics are amongst the most well-known as shown in Fig. 1a with data on populations of hares and lynxes. Simple versions of these dynamics are represented by the Lotka-Volterra model Fig. 1b, which produce oscillating solutions for hares and lynxes Fig. 1c. A powerful idea is that the motion of predator-prey (and many other similar systems) can be represented as different projections of motion on a circle as shown in Fig. 1d. Why we would want to do this is explored in this tutorial and how using the concept of complex numbers is the most natural and compact way to describe circular motion.</p>
 <p><img alt="Predator-Prey oscillations" src="../../_images/Fig1.jpg" /></p>
 <p>The plot of <span class="math notranslate nohighlight">\(X\)</span> vs <span class="math notranslate nohighlight">\(Y\)</span> is called a <em>phase plane</em> and shows the behaviour is very well-represented by simple sinusoidal behaviour for prey <span class="math notranslate nohighlight">\(X\)</span> and predator <span class="math notranslate nohighlight">\(Y\)</span>, about some average value <span class="math notranslate nohighlight">\(X^*\)</span> and <span class="math notranslate nohighlight">\(Y^*\)</span> for predator and prey respectively:</p>
-<p>\begin{eqnarray}\label{Eqn:XY}</p>
+<p>\begin{gather*}</p>
 <p>X(t) &amp;=&amp; X^<em>+R_1\cos⁡(\omega t-\phi) \tag{1}\
 Y(t) &amp;=&amp; Y^</em>+R_2  \sin(\omega t-\phi) \tag{2}
-\end{eqnarray}</p>
+\end{gather*}</p>
 <p>where <span class="math notranslate nohighlight">\(\omega = 2\pi/T\)</span> is the <em>angular velocity</em> of the oscillations, where <span class="math notranslate nohighlight">\(T\)</span> is the period. If we assume the predator natural rate of death is the same as rate of growth of prey and that the predator is <span class="math notranslate nohighlight">\(100\%\)</span> efficient in gaining energy for growth from death of prey due to predation, then it turns out <span class="math notranslate nohighlight">\(R_1=R_2\)</span>; if we let <span class="math notranslate nohighlight">\(x(t)=X(t)-X^*\)</span> and <span class="math notranslate nohighlight">\(y(t)=Y(t)-Y^*\)</span>, be the number of excess prey and predators, then our equation of motion is</p>
-<p>\begin{eqnarray}\label{Eqn:xy}</p>
+<p>\begin{gather*}</p>
 <p>x(t) &amp;=&amp; R\cos(\omega t-\phi) \tag{3}\
 y(t) &amp;=&amp; R\sin(\omega t-\phi) \tag{4}.
-\end{eqnarray}
+\end{gather*}
 an example of this is shown in Fig. 1.</p>
 <p><strong>a)</strong> With reference to Fig. 1d, verify that for each of the times <span class="math notranslate nohighlight">\(t=0,1,2,3,…8\)</span> years the values of <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> match their corresponding values on the <span class="math notranslate nohighlight">\(x-y\)</span> plane and that as time progresses the motion is along the circumference of the circle. Which direction is the motion on the circle: clockwise or anti-clockwise? What is the relationship of <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> with respect to the motion on the circle?</p>
 <p><strong>b)</strong> Reproduce Fig.1d, by plotting plot <span class="math notranslate nohighlight">\(x(t)\)</span>  vs <span class="math notranslate nohighlight">\(t\)</span>  &amp; <span class="math notranslate nohighlight">\(y(t)\)</span> vs <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(x(t)\)</span> vs <span class="math notranslate nohighlight">\(y(t)\)</span> for times <span class="math notranslate nohighlight">\(t=0,1,2,3,…8\)</span> years for <span class="math notranslate nohighlight">\(\omega=\pi/4\)</span>  years<span class="math notranslate nohighlight">\(^{-1}\)</span> with <span class="math notranslate nohighlight">\(R=1\)</span> &amp; <span class="math notranslate nohighlight">\(\phi=\pm\pi/4\)</span> and label each point with their corresponding value of <span class="math notranslate nohighlight">\(t\)</span>. What does changing the phase <span class="math notranslate nohighlight">\(\phi\)</span> do?</p>
 <p><strong>c)</strong> Repeat for <span class="math notranslate nohighlight">\(\omega=\pi/2\)</span>, remembering to label points with time <span class="math notranslate nohighlight">\(t\)</span>.  What does doubling the rate <span class="math notranslate nohighlight">\(\omega\)</span> do?</p>
 <p><strong>d)</strong> By setting <span class="math notranslate nohighlight">\(t=0\)</span> in Eqns.(3) and (4) write down the initial condition <span class="math notranslate nohighlight">\(x_0=x(0)\)</span>  &amp; <span class="math notranslate nohighlight">\(y_0=y(0)\)</span> and mark on the plot for <span class="math notranslate nohighlight">\(\phi=\pi/4\)</span>, the initial value <span class="math notranslate nohighlight">\((x_0,y_0)\)</span> on the plane. What do you notice? Is the initial angle of the point <span class="math notranslate nohighlight">\(\pi/4\)</span> or <span class="math notranslate nohighlight">\(-\pi/4\)</span>?</p>
 <p><strong>e)</strong> Divide <span class="math notranslate nohighlight">\(y_0\)</span> by <span class="math notranslate nohighlight">\(x_0\)</span> to show that</p>
-<p>\begin{equation*}
+<div class="math notranslate nohighlight">
+\[
 \phi=-\tan^{-1}⁡\left(\frac{y_0}{x_0} \right) \tag{5}
-\end{equation*}</p>
+\]</div>
 <p>where <span class="math notranslate nohighlight">\(\tan^{-1}\)</span> is the inverse of the tangent function <span class="math notranslate nohighlight">\(\tan\)</span>, such that <span class="math notranslate nohighlight">\(\theta = \tan^{-1}(\tan(\theta))\)</span>.</p>
 <p><strong>f)</strong> Now for population dynamics, <span class="math notranslate nohighlight">\(\theta\)</span> represents the phase of the predator-prey cycle, which for a pure sinusoidal behaviour increases linearly in time, <span class="math notranslate nohighlight">\(\theta=\omega t\)</span>. Estimate <span class="math notranslate nohighlight">\(T\)</span> from the graph of Lynx-Hare dynamics (to nearest year), and given the relationship between <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(\omega\)</span> given above calculate <span class="math notranslate nohighlight">\(\omega\)</span> and state the units of <span class="math notranslate nohighlight">\(\omega\)</span>.</p>
 <p><strong>g)</strong> Show that the equations of motion (Eqns.(3) and (4)) obey the implicit equation for a circle</p>
-<p>\begin{equation*}
-x^2 (t)+y^2 (t)=R^2 \tag{6}
-\end{equation*}</p>
+<div class="math notranslate nohighlight">
+\[
+  x^2 (t)+y^2 (t)=R^2 \tag{6}
+  \]</div>
 <p>(Hint: <span class="math notranslate nohighlight">\(\sin^2(\theta)+\cos^2(\theta)=1\)</span>). What is the significance of this result?</p>
 <p><strong>h)</strong> If at <span class="math notranslate nohighlight">\(t=0\)</span> there are an excess of <span class="math notranslate nohighlight">\(80\)</span> hares and <span class="math notranslate nohighlight">\(60\)</span> lynxes, calculate a prediction of the number of excess hares and lynxes at time <span class="math notranslate nohighlight">\(t=15\)</span> years, using the above equations. Your answer should be negative — why is that ok?</p>
 <p><strong>i)</strong> If at some time <span class="math notranslate nohighlight">\(t\)</span> the excess number of lynxes is <span class="math notranslate nohighlight">\(10\)</span> calculate the possible number of excess hares (to the nearest integer) assuming this circular model is correct. Can you calculate from this information the time <span class="math notranslate nohighlight">\(t\)</span>? Discuss what extra information you would need to determine the number of hares and the time of observation (Hint: your diagrams of the \textit{phase portrait} (part a&amp;b) should provide a clue).</p>
@@ -449,24 +451,28 @@ x^2 (t)+y^2 (t)=R^2 \tag{6}
 <p><strong>d)</strong> Given two complex numbers <span class="math notranslate nohighlight">\(z=a+ib\)</span> and <span class="math notranslate nohighlight">\(w=c+id\)</span>, multiply them by using the normal rules of multiplying out brackets, but in addition, using the rule just discovered that <span class="math notranslate nohighlight">\(i^2=-1\)</span> to show
 $<span class="math notranslate nohighlight">\(zw = ac-bd +i(ad + bc).\)</span>$</p>
 <p><strong>e)</strong> Let the complex number <span class="math notranslate nohighlight">\(u(\theta)=\cos\theta⁡+i\sin\theta\)</span>. Calculate <span class="math notranslate nohighlight">\(uz\)</span>, for <span class="math notranslate nohighlight">\(\theta=\pi/4\)</span>, using the complex number representation of each of the vectors below and sketch where they lie on the <span class="math notranslate nohighlight">\(x\)</span> - <span class="math notranslate nohighlight">\(y\)</span> plane (also called the real-imaginary plane):</p>
-<p>\begin{equation*}
-z=\begin{pmatrix}1 \ 0 \end{pmatrix}; z=\begin{pmatrix} 0 \ 1 \end{pmatrix}; z=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \ 1 \end{pmatrix}
-\end{equation*}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+z=\begin{pmatrix}1 \\ 0 \end{pmatrix}; z=\begin{pmatrix} 0 \\ 1 \end{pmatrix}; z=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix}
+\end{split}\]</div>
 <p>What does the complex number <span class="math notranslate nohighlight">\(u(\theta=\pi/4)\)</span> do?</p>
 <p><strong>f)</strong> Repeat above for <span class="math notranslate nohighlight">\(zu\)</span>. What do you notice – what is the difference between post- or pre-multiplication of a complex number?</p>
 <p><strong>g)</strong> Complex numbers provide a simple and compact way of describing rotations, in particular in their polar-form <span class="math notranslate nohighlight">\(re^{i\theta}\)</span>; the connection between the polar form of a complex number of it’s Cartesian form is found by Euler’s formula:</p>
-<p>\begin{equation}
-e^{i\theta} = \cos{\theta} +i\sin{\theta}.
-\end{equation}</p>
+<div class="math notranslate nohighlight">
+\[
+        e^{i\theta} = \cos{\theta} +i\sin{\theta}.
+  \]</div>
 <p>Use Euler’s formula to show that Eqn. 3 can be expressed as follows</p>
-<p>\begin{equation}
-z(t)=Re^{i(\omega t-\phi)}
-\end{equation}</p>
+<div class="math notranslate nohighlight">
+\[
+        z(t)=Re^{i(\omega t-\phi)}
+  \]</div>
 <p>where <span class="math notranslate nohighlight">\(z(t) = x(t)+iy(t)\)</span>, and <span class="math notranslate nohighlight">\(\phi\)</span> is as given by Eqn. 5.
 \item By setting <span class="math notranslate nohighlight">\(t=0\)</span> show that this can be expressed explicitly in terms of the initial condition <span class="math notranslate nohighlight">\(z(0)=z_0=x_0+iy_0\)</span>, using your expressions for <span class="math notranslate nohighlight">\(x_0\)</span> and <span class="math notranslate nohighlight">\(y_0\)</span> derived in Q1d:</p>
-<p>\begin{equation}
-z(t) = z_0e^{i\omega t}
-\end{equation}</p>
+<div class="math notranslate nohighlight">
+\[
+        z(t) = z_0e^{i\omega t}
+  \]</div>
 <p>\item Using your estimate of <span class="math notranslate nohighlight">\(\omega\)</span> from Q1 use this last equation to predict the excess number of hares and lynxes at time <span class="math notranslate nohighlight">\(t=15\)</span> years, given at <span class="math notranslate nohighlight">\(t=0\)</span> there are an excess of <span class="math notranslate nohighlight">\(80\)</span> hares and <span class="math notranslate nohighlight">\(60\)</span> lynxes. Your answer should agree with Q1h.</p>
 </div>
 </div>
