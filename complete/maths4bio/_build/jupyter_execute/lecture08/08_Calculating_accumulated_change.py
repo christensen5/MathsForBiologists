@@ -15,7 +15,7 @@
 # S_n &= a_0 + a_1 + \cdots + a_{n-1} + a_n \\
 # S_n &= \sum_{i = 0}^n a_i \end{align}$$  
 #   
-# The sequence $\{S_n\}$ is called a *series* (or an infinite series, to emphasize teh sum over increasing number of terms $\{a_n\}$).  
+# The sequence $\{S_n\}$ is called a *series* (or an infinite series, to emphasize the sum over increasing number of terms $\{a_n\}$).  
 #   
 # The same way as we asked about $\lim a_n$, we can ask if $\lim S_n$ exists. If it exists, or, in other words, if the sum of infinite terms $\{a_n\}$ is equal to a finite number, we say that the series $S_n$ is convergent.  
 #   
@@ -104,7 +104,7 @@
 #   
 # This results is known as the *Fundamental theorem of Calculus*, and it say that the instantaneous rate of change of the area below a given curve $f$ at a point $x$ is given by the value of the function at that point. In other words, the area $F(x)$ is a function that, if differentiated, gives the function $f(x)$.  
 #   
-# The function $F(x)$ is then called an **antiderivative** of $f(x)$. In general, there is a *family* of antiderivates of $f(x)$, since $\displaystyle\frac{d(F(x) + C)}{dx}=\displaystyle\frac{dF}{dx}=f(x)$, indenpendent of the value of the constant $C$. We therefore call **indefinite integral**:
+# The function $F(x)$ is then called an **antiderivative** of $f(x)$. In general, there is a *family* of antiderivates of $f(x)$, since $\displaystyle\frac{d(F(x) + C)}{dx}=\displaystyle\frac{dF}{dx}=f(x)$, independent of the value of the constant $C$. We therefore call **indefinite integral**:
 # 
 # $$\int f(x)dx = F(x) + C$$  
 #    
@@ -155,7 +155,7 @@
 #       
 # - $\int xe^{(x^2-1)}dx$  
 #       
-#     See that $u=x^2-1 \implies \displaystyle\frac{du}{dx}=2x \implies \displaystyle\frac{du}{2}=xdx$. Then:  
+#     See that $u=x^2-1 \implies \displaystyle\frac{du}{dx}=2x \implies  dx=\displaystyle\frac{du}{2x}$. Then:  
 #     
 #     $$\int \frac{1}{2}e^{u}du = \frac{1}{2}e^u + C = \frac{e^{(x^2-1)}}{2} + C $$  
 #       
@@ -208,7 +208,7 @@
 # 
 # $$\int \frac{P(x)}{Q(x)}dx$$ 
 # 
-# where the degree of $P(x)$ is smaller than the degree of $Q(x)$, and $Q(x)=a(x-x_0)(x-x_2)\cdots(x-x_n)$, we can write
+# where the degree of $P(x)$ is smaller than the degree of $Q(x)$, and $Q(x)=a(x-x_1)(x-x_2)\cdots(x-x_n)$, we can write
 # 
 # $$\frac{P(x)}{Q(x)} = \frac{1}{a}\left[\frac{A_1}{x-x_1}+\frac{A_2}{x-x_2}+\cdots+\frac{A_n}{x-x_n}\right]$$ 
 # 
@@ -218,7 +218,7 @@
 #   
 # - $\int \frac{1}{x(x-1)}\, dx$  
 #       
-#     First, note that $\displaystyle\frac{1}{x(x-1)} \implies  \displaystyle\frac{A}{x} + \displaystyle\frac{B}{(x-1)} \implies 1 = A(x-1) + Bx \implies 1 = x(A+B) - A$. By comparing the coeffients of the terms in $x$ and the terms independent of $x$, we obtain:  
+#     First, note that $\displaystyle\frac{1}{x(x-1)} =  \displaystyle\frac{A}{x} + \displaystyle\frac{B}{(x-1)} \implies 1 = A(x-1) + Bx \implies 1 = x(A+B) - A$. By comparing the coeffients of the terms in $x$ and the terms independent of $x$, we obtain:  
 #       
 #     $$\begin{cases}
 #     A + B &= 0\\

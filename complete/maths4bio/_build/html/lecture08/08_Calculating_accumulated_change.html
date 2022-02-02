@@ -152,6 +152,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/lecture02/Tutorial_02.html">
+   Tutorial 02
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/lecture05/Tutorial_05.html">
    Tutorial 05
   </a>
@@ -365,7 +370,7 @@ S_2 &amp;= a_0 + a_1 + a_2 \\
 &amp;\vdots \\
 S_n &amp;= a_0 + a_1 + \cdots + a_{n-1} + a_n \\
 S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
-<p>The sequence <span class="math notranslate nohighlight">\(\{S_n\}\)</span> is called a <em>series</em> (or an infinite series, to emphasize teh sum over increasing number of terms <span class="math notranslate nohighlight">\(\{a_n\}\)</span>).</p>
+<p>The sequence <span class="math notranslate nohighlight">\(\{S_n\}\)</span> is called a <em>series</em> (or an infinite series, to emphasize the sum over increasing number of terms <span class="math notranslate nohighlight">\(\{a_n\}\)</span>).</p>
 <p>The same way as we asked about <span class="math notranslate nohighlight">\(\lim a_n\)</span>, we can ask if <span class="math notranslate nohighlight">\(\lim S_n\)</span> exists. If it exists, or, in other words, if the sum of infinite terms <span class="math notranslate nohighlight">\(\{a_n\}\)</span> is equal to a finite number, we say that the series <span class="math notranslate nohighlight">\(S_n\)</span> is convergent.</p>
 <div class="admonition-examples admonition">
 <p class="admonition-title">Examples</p>
@@ -426,7 +431,7 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\lim_{h\rightarrow 0} \displaystyle\frac{F(x+h) - F(x)}{h} = \displaystyle\frac{dF}{dx} = f(x).\]</div>
 <p>This results is known as the <em>Fundamental theorem of Calculus</em>, and it say that the instantaneous rate of change of the area below a given curve <span class="math notranslate nohighlight">\(f\)</span> at a point <span class="math notranslate nohighlight">\(x\)</span> is given by the value of the function at that point. In other words, the area <span class="math notranslate nohighlight">\(F(x)\)</span> is a function that, if differentiated, gives the function <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
-<p>The function <span class="math notranslate nohighlight">\(F(x)\)</span> is then called an <strong>antiderivative</strong> of <span class="math notranslate nohighlight">\(f(x)\)</span>. In general, there is a <em>family</em> of antiderivates of <span class="math notranslate nohighlight">\(f(x)\)</span>, since <span class="math notranslate nohighlight">\(\displaystyle\frac{d(F(x) + C)}{dx}=\displaystyle\frac{dF}{dx}=f(x)\)</span>, indenpendent of the value of the constant <span class="math notranslate nohighlight">\(C\)</span>. We therefore call <strong>indefinite integral</strong>:</p>
+<p>The function <span class="math notranslate nohighlight">\(F(x)\)</span> is then called an <strong>antiderivative</strong> of <span class="math notranslate nohighlight">\(f(x)\)</span>. In general, there is a <em>family</em> of antiderivates of <span class="math notranslate nohighlight">\(f(x)\)</span>, since <span class="math notranslate nohighlight">\(\displaystyle\frac{d(F(x) + C)}{dx}=\displaystyle\frac{dF}{dx}=f(x)\)</span>, independent of the value of the constant <span class="math notranslate nohighlight">\(C\)</span>. We therefore call <strong>indefinite integral</strong>:</p>
 <div class="math notranslate nohighlight">
 \[\int f(x)dx = F(x) + C\]</div>
 <p>It also directly follows that</p>
@@ -465,7 +470,7 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
   <br />
 </li>
 <li><p><span class="math notranslate nohighlight">\(\int xe^{(x^2-1)}dx\)</span></p>
-<p>See that <span class="math notranslate nohighlight">\(u=x^2-1 \implies \displaystyle\frac{du}{dx}=2x \implies \displaystyle\frac{du}{2}=xdx\)</span>. Then:</p>
+<p>See that <span class="math notranslate nohighlight">\(u=x^2-1 \implies \displaystyle\frac{du}{dx}=2x \implies  dx=\displaystyle\frac{du}{2x}\)</span>. Then:</p>
 <div class="math notranslate nohighlight">
 \[\int \frac{1}{2}e^{u}du = \frac{1}{2}e^u + C = \frac{e^{(x^2-1)}}{2} + C \]</div>
 </li>
@@ -515,7 +520,7 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 <p>If the integral has the form</p>
 <div class="math notranslate nohighlight">
 \[\int \frac{P(x)}{Q(x)}dx\]</div>
-<p>where the degree of <span class="math notranslate nohighlight">\(P(x)\)</span> is smaller than the degree of <span class="math notranslate nohighlight">\(Q(x)\)</span>, and <span class="math notranslate nohighlight">\(Q(x)=a(x-x_0)(x-x_2)\cdots(x-x_n)\)</span>, we can write</p>
+<p>where the degree of <span class="math notranslate nohighlight">\(P(x)\)</span> is smaller than the degree of <span class="math notranslate nohighlight">\(Q(x)\)</span>, and <span class="math notranslate nohighlight">\(Q(x)=a(x-x_1)(x-x_2)\cdots(x-x_n)\)</span>, we can write</p>
 <div class="math notranslate nohighlight">
 \[\frac{P(x)}{Q(x)} = \frac{1}{a}\left[\frac{A_1}{x-x_1}+\frac{A_2}{x-x_2}+\cdots+\frac{A_n}{x-x_n}\right]\]</div>
 <p>with <span class="math notranslate nohighlight">\(\{A_n\}\)</span> to be determined.</p>
@@ -523,7 +528,7 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 <p class="admonition-title">Example</p>
 <ul>
 <li><p><span class="math notranslate nohighlight">\(\int \frac{1}{x(x-1)}\, dx\)</span></p>
-<p>First, note that <span class="math notranslate nohighlight">\(\displaystyle\frac{1}{x(x-1)} \implies  \displaystyle\frac{A}{x} + \displaystyle\frac{B}{(x-1)} \implies 1 = A(x-1) + Bx \implies 1 = x(A+B) - A\)</span>. By comparing the coeffients of the terms in <span class="math notranslate nohighlight">\(x\)</span> and the terms independent of <span class="math notranslate nohighlight">\(x\)</span>, we obtain:</p>
+<p>First, note that <span class="math notranslate nohighlight">\(\displaystyle\frac{1}{x(x-1)} =  \displaystyle\frac{A}{x} + \displaystyle\frac{B}{(x-1)} \implies 1 = A(x-1) + Bx \implies 1 = x(A+B) - A\)</span>. By comparing the coeffients of the terms in <span class="math notranslate nohighlight">\(x\)</span> and the terms independent of <span class="math notranslate nohighlight">\(x\)</span>, we obtain:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
     A + B &amp;= 0\\
