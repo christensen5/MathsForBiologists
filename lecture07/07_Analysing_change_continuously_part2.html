@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>07 - Analysing change, continuously (Part 2) &#8212; Maths for Biologists</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
@@ -37,20 +38,22 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="08 - Calculating accumulated change" href="../lecture08/08_Calculating_accumulated_change.html" />
@@ -333,14 +336,14 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="analysing-change-continuously-part-2">
+  <section class="tex2jax_ignore mathjax_ignore" id="analysing-change-continuously-part-2">
 <h1>07 - Analysing change, continuously (Part 2)<a class="headerlink" href="#analysing-change-continuously-part-2" title="Permalink to this headline">¶</a></h1>
 <p>In many different contexts we may be interested in finding the maximum or minimum values a given function may assume. This process is referred to as <em>optimization</em>.</p>
 <p>In Ecology, some of the most common uses for optimization methods are:</p>
 <p>1 - <em>Statistical estimation and inference</em>: optimizing the likelihood of a model and its parameters being true, for a given set of observations.</p>
 <p>2 - <em>Resources management</em>: finding a balance between different wildlife and economic priorities (market, legal, natural constraints)</p>
 <p>3 - <em>Optimality theory</em>: how can the behavioural or life-history trade-offs result in optimal strategies for different organisms</p>
-<div class="section" id="extreme-values-of-functions">
+<section id="extreme-values-of-functions">
 <h2>Extreme values of functions<a class="headerlink" href="#extreme-values-of-functions" title="Permalink to this headline">¶</a></h2>
 <p>For a given function <span class="math notranslate nohighlight">\(f(x)\)</span> that is <strong>continuous</strong> in an interval <span class="math notranslate nohighlight">\(a \le x \le b\)</span>, there will always be a global maximum and a global minimum, points at which the function assumes its maximum and minimum values in the interval.</p>
 <img alt="../_images/extrema.png" src="../_images/extrema.png" />
@@ -375,14 +378,14 @@
 <li><p>Check points where derivative is not defined.</p></li>
 <li><p>Check endpoints of domain.</p></li>
 </ul>
-</div>
-<div class="section" id="monotonicity-and-concavity">
+</section>
+<section id="monotonicity-and-concavity">
 <h2>Monotonicity and concavity<a class="headerlink" href="#monotonicity-and-concavity" title="Permalink to this headline">¶</a></h2>
 <p>Imagine a function <span class="math notranslate nohighlight">\(f(x)\)</span> defined in a given interval <span class="math notranslate nohighlight">\(a \le x \le b\)</span>. For every <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> in this interval, if <span class="math notranslate nohighlight">\(x_{2} &gt; x_{1}\)</span> implies that <span class="math notranslate nohighlight">\(f(x_{2}) &gt; f(x_{1})\)</span> then the function is <strong>increasing</strong> in this interval. If on the other hand, <span class="math notranslate nohighlight">\(x_{2} &gt; x_{1}\)</span> implies that <span class="math notranslate nohighlight">\(f(x_{2}) &lt; f(x_{1})\)</span> then the function is <strong>decreasing</strong> in this interval.  This can be graphically shown as:</p>
 <img alt="../_images/incr_decr.png" src="../_images/incr_decr.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Since we are using the stric inequalities (“<span class="math notranslate nohighlight">\(&gt;\)</span>” or “<span class="math notranslate nohighlight">\(&lt;\)</span>”) it can be added that the function is <strong>monotonic</strong>, or monotonically increasing or decreasing. If we had <span class="math notranslate nohighlight">\(x_{2} &gt; x_{1}\)</span> implying that <span class="math notranslate nohighlight">\(f(x_{2}) \ge f(x_{1})\)</span> (or <span class="math notranslate nohighlight">\(f(x_{2}) \le f(x_{1})\)</span>), the function would be <em>non-decreasing</em> (or <em>non-increasing</em>).</p>
+<p>Since we are using the stric inequalities (”<span class="math notranslate nohighlight">\(&gt;\)</span>” or “<span class="math notranslate nohighlight">\(&lt;\)</span>”) it can be added that the function is <strong>monotonic</strong>, or monotonically increasing or decreasing. If we had <span class="math notranslate nohighlight">\(x_{2} &gt; x_{1}\)</span> implying that <span class="math notranslate nohighlight">\(f(x_{2}) \ge f(x_{1})\)</span> (or <span class="math notranslate nohighlight">\(f(x_{2}) \le f(x_{1})\)</span>), the function would be <em>non-decreasing</em> (or <em>non-increasing</em>).</p>
 </div>
 <p>Now suppose that <span class="math notranslate nohighlight">\(f\)</span> is well-behaved in a given interval <span class="math notranslate nohighlight">\(a \le x \le b\)</span> (in mathematical terms, we say: <span class="math notranslate nohighlight">\(f\)</span> is continuous and differentiable in <span class="math notranslate nohighlight">\((a,b)\)</span>), then an important results is that</p>
 <div class="math notranslate nohighlight">
@@ -432,8 +435,8 @@ f''(x) = 6x -3 \end{align}\end{split}\]</div>
 <p>On the plots below, compare the intervals where the second derivative is positive (negative) with the intervals where the function <span class="math notranslate nohighlight">\(f(x)\)</span> is concave up (concave down).</p>
 <img alt="../_images/plot_concav.png" src="../_images/plot_concav.png" />
 </div>
-</div>
-<div class="section" id="finding-extrema">
+</section>
+<section id="finding-extrema">
 <h2>Finding extrema<a class="headerlink" href="#finding-extrema" title="Permalink to this headline">¶</a></h2>
 <p>Back to our strategy for finding maxima or minima of functions, we first determine the set:</p>
 <ul class="simple">
@@ -461,8 +464,8 @@ f''(x)&amp;=18x^{2}-12x-12=6(3x^{2}-2x-2)\end{align}\end{split}\]</div>
 <p>Now we can check on the plot of <span class="math notranslate nohighlight">\(f(x)\)</span> that we have successfully determined the local extrema.</p>
 <img alt="../_images/plot_extrema.png" src="../_images/plot_extrema.png" />
 </div>
-</div>
-<div class="section" id="inflection-points">
+</section>
+<section id="inflection-points">
 <h2>Inflection points<a class="headerlink" href="#inflection-points" title="Permalink to this headline">¶</a></h2>
 <p>As we saw before, given a function <span class="math notranslate nohighlight">\(f(x)\)</span>, for some values of <span class="math notranslate nohighlight">\(x\)</span>, there might be a change in the concavity of the function:</p>
 <img alt="../_images/inflection.png" src="../_images/inflection.png" />
@@ -500,8 +503,8 @@ f''(x)&amp;=18x^{2}-12x-12=6(3x^{2}-2x-2)\end{align}\end{split}\]</div>
 <p class="admonition-title">Tip</p>
 <p>For the intervals where the function is concave up you can also think of it as representing “accelerated change” of that function (since the first derivative, the “velocity” is increasing), while the intervals where it is concave down represent “deccelerated change” of the function. Understanding this can be particularly important if you function has a specific biological meaning, as in the previous example.</p>
 </div>
-</div>
-<div class="section" id="series-expansions">
+</section>
+<section id="series-expansions">
 <h2>Series expansions<a class="headerlink" href="#series-expansions" title="Permalink to this headline">¶</a></h2>
 <p>From the formal definition of a derivative</p>
 <div class="math notranslate nohighlight">
@@ -603,8 +606,8 @@ f^{(n)}(x)=\frac{n!}{(1-x)^{n+1}} \implies f^{(n)}(0)= n!\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\frac{1}{1-x}=1+x+x^2+x^3+\cdots+x^n+O_{n+1}(x),\ -1 \leq x &lt; 1\]</div>
 <p>where the notation <span class="math notranslate nohighlight">\(O_{m}(x)\)</span> represents the terms of order <span class="math notranslate nohighlight">\(n\ge m\)</span> that belong to this (infinite) sum but are not explicitly shown.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

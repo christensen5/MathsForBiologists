@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Tutorial 02 &#8212; Maths for Biologists</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -37,20 +38,22 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Tutorial 05" href="../lecture05/Tutorial_05.html" />
@@ -369,11 +372,11 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="tutorial-02">
+  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-02">
 <h1>Tutorial 02<a class="headerlink" href="#tutorial-02" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="question-1">
+<section id="question-1">
 <h2>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="simple-equation-for-predator-prey-motion">
+<section id="simple-equation-for-predator-prey-motion">
 <h3>Simple equation for predator prey motion<a class="headerlink" href="#simple-equation-for-predator-prey-motion" title="Permalink to this headline">¶</a></h3>
 <p>Oscillations are found throughout many diverse phenomena in ecology and evolution. Predator-prey dynamics are amongst the most well-known as shown in Fig. 1a with data on populations of hares and lynxes. Simple versions of these dynamics are represented by the Lotka-Volterra model Fig. 1b, which produce oscillating solutions for hares and lynxes Fig. 1c. A powerful idea is that the motion of predator-prey (and many other similar systems) can be represented as different projections of motion on a circle as shown in Fig. 1d. Why we would want to do this is explored in this tutorial and how using the concept of complex numbers is the most natural and compact way to describe circular motion.</p>
 <p><img alt="Predator-Prey oscillations" src="../../_images/Fig1.jpg" /></p>
@@ -407,12 +410,12 @@
 <p>(Hint: <span class="math notranslate nohighlight">\(\sin^2(\theta)+\cos^2(\theta)=1\)</span>). What is the significance of this result?</p>
 <p><strong>h)</strong> If at <span class="math notranslate nohighlight">\(t=0\)</span> there are an excess of <span class="math notranslate nohighlight">\(80\)</span> hares and <span class="math notranslate nohighlight">\(60\)</span> lynxes, calculate a prediction of the number of excess hares and lynxes at time <span class="math notranslate nohighlight">\(t=15\)</span> years, using the above equations. Your answer should be negative — why is that ok?</p>
 <p><strong>i)</strong> If at some time <span class="math notranslate nohighlight">\(t\)</span> the excess number of lynxes is <span class="math notranslate nohighlight">\(10\)</span> calculate the possible number of excess hares (to the nearest integer) assuming this circular model is correct. Can you calculate from this information the time <span class="math notranslate nohighlight">\(t\)</span>? Discuss what extra information you would need to determine the number of hares and the time of observation (Hint: your diagrams of the \textit{phase portrait} (part a&amp;b) should provide a clue).</p>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="question-2">
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="question-2">
 <h1>Question 2}<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="complex-worms">
+<section id="complex-worms">
 <h2>Complex worms<a class="headerlink" href="#complex-worms" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Guide the worm out of the maze!" src="../../_images/Fig2.jpg" /></p>
 <p>Imagine a worm placed in a 2D maze. They are intelligent worms that happen to understand just two mathematical instructions for each move at a time:</p>
@@ -437,11 +440,11 @@
 (N.B. This species of worm only understands radians, not degrees!)\
 (Hint: use your trigonometric skills! And you need only provide answer to <span class="math notranslate nohighlight">\(1\)</span> d.p.)</p>
 <p><strong>e)</strong> If the worm jumps to the exit in <span class="math notranslate nohighlight">\(1\)</span> step what instruction would you provide?</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="question-3">
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="question-3">
 <h1>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="multiplication-rotation-using-complex-numbers">
+<section id="multiplication-rotation-using-complex-numbers">
 <h2>Multiplication &amp; rotation using complex numbers<a class="headerlink" href="#multiplication-rotation-using-complex-numbers" title="Permalink to this headline">¶</a></h2>
 <p>The previous question has introduced the idea that one way to describe points in a plane, is to use a new type of number called <em>complex numbers</em> (a better name might be 2D numbers for 2 dimensional), where <span class="math notranslate nohighlight">\(i\)</span> represents a rotation by <span class="math notranslate nohighlight">\(90^\circ\)</span> (<span class="math notranslate nohighlight">\(\pi/2\)</span> radians) – by convention anti-clockwise.</p>
 <p>(For historical reasons these are called <em>imaginary</em> numbers — though there is nothing imaginary about them!)</p>
@@ -474,8 +477,8 @@ z=\begin{pmatrix}1 \\ 0 \end{pmatrix}; z=\begin{pmatrix} 0 \\ 1 \end{pmatrix}; z
         z(t) = z_0e^{i\omega t}
   \]</div>
 <p>\item Using your estimate of <span class="math notranslate nohighlight">\(\omega\)</span> from Q1 use this last equation to predict the excess number of hares and lynxes at time <span class="math notranslate nohighlight">\(t=15\)</span> years, given at <span class="math notranslate nohighlight">\(t=0\)</span> there are an excess of <span class="math notranslate nohighlight">\(80\)</span> hares and <span class="math notranslate nohighlight">\(60\)</span> lynxes. Your answer should agree with Q1h.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>01 - Making mathematical statements &#8212; Maths for Biologists</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
@@ -37,20 +38,22 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="02 - Describing shapes and patterns" href="../lecture02/02_Describing_shapes_and_patterns.html" />
@@ -411,13 +414,13 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="making-mathematical-statements">
+  <section class="tex2jax_ignore mathjax_ignore" id="making-mathematical-statements">
 <h1>01 - Making mathematical statements<a class="headerlink" href="#making-mathematical-statements" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="sets-and-relations">
+<section id="sets-and-relations">
 <h2>Sets and relations<a class="headerlink" href="#sets-and-relations" title="Permalink to this headline">¶</a></h2>
 <p>Start by watching the <a class="reference external" href="https://web.microsoftstream.com/video/a9ad1a8c-3d80-4910-b9f2-fab98c01b40b">video</a>.</p>
-</div>
-<div class="section" id="polynomial-functions">
+</section>
+<section id="polynomial-functions">
 <h2>Polynomial functions<a class="headerlink" href="#polynomial-functions" title="Permalink to this headline">¶</a></h2>
 <p>One of the simplest elemntary functions is given by:</p>
 <div class="math notranslate nohighlight">
@@ -434,15 +437,15 @@
 <p>When the domain of the polynomial function is not explicitly given, it is frequently assumed to be all real numbers, <span class="math notranslate nohighlight">\({\rm I\!R}\)</span>.</p>
 </div>
 <p>Let us discuss three of the most common forms of polynomial functions with degrees <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, and <span class="math notranslate nohighlight">\(2\)</span>.</p>
-<div class="section" id="degree-0">
+<section id="degree-0">
 <h3>Degree 0<a class="headerlink" href="#degree-0" title="Permalink to this headline">¶</a></h3>
 <p>Polynomial functions of degree 0 assume the form:</p>
 <div class="math notranslate nohighlight">
 \[ f(x) = c, \]</div>
 <p>where <span class="math notranslate nohighlight">\(c\)</span> is a real number. This function is graphically represented by:</p>
 <img alt="../_images/poly_deg0.png" src="../_images/poly_deg0.png" />
-</div>
-<div class="section" id="degree-1">
+</section>
+<section id="degree-1">
 <h3>Degree 1<a class="headerlink" href="#degree-1" title="Permalink to this headline">¶</a></h3>
 <p>Polynomial functions of degree 1 are also called <em>linear functions</em> and are given by:</p>
 <div class="math notranslate nohighlight">
@@ -529,14 +532,14 @@ Additionally, the function crosses the <span class="math notranslate nohighlight
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="degree-2">
+</section>
+<section id="degree-2">
 <h3>Degree 2<a class="headerlink" href="#degree-2" title="Permalink to this headline">¶</a></h3>
 <p>Now we look at polynomial functions of degree 2, given by the general form:</p>
 <div class="math notranslate nohighlight">
 \[f(x) = ax^2 + bx +c,\]</div>
 <p>the coefficients <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are real numbers (with <span class="math notranslate nohighlight">\(a \ne 0\)</span>). The graph of a polynomial function of degree 2 is a <em>parabola</em> and many of its properties can be readily known by analysing the coefficients.</p>
-<div class="section" id="concavity">
+<section id="concavity">
 <h4>Concavity<a class="headerlink" href="#concavity" title="Permalink to this headline">¶</a></h4>
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -562,8 +565,8 @@ Additionally, the function crosses the <span class="math notranslate nohighlight
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="intercept-roots">
+</section>
+<section id="intercept-roots">
 <h4>Intercept &amp; Roots<a class="headerlink" href="#intercept-roots" title="Permalink to this headline">¶</a></h4>
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -597,8 +600,8 @@ x_2 &amp;= \frac{-b+\sqrt{b^2-4ac}}{2a}
 \[ \Delta = b^2 -4ac.\]</div>
 <p>Depending on the value of the discriminant a quick conclusion can be reached regarding the roots of the function.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0084cb16-8ace-424a-927e-47c6c36f12db" name="bb12f06f-6eb1-4ff3-8e17-03e175be99f0" type="radio">
-</input><label class="tabbed-label" for="0084cb16-8ace-424a-927e-47c6c36f12db">
+<input checked="checked" id="1c8f1598-8a29-455b-aa89-ca9c1132cc93" name="d83ec496-905d-4316-8eab-17b70c6a0614" type="radio">
+</input><label class="tabbed-label" for="1c8f1598-8a29-455b-aa89-ca9c1132cc93">
 Case 1  -  <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span>  </label><div class="tabbed-content docutils">
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -630,8 +633,8 @@ Case 1  -  <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span>  
 </div>
 </div>
 </div>
-<input id="428d99ed-1b70-4e11-9748-4e9ea9a89399" name="bb12f06f-6eb1-4ff3-8e17-03e175be99f0" type="radio">
-</input><label class="tabbed-label" for="428d99ed-1b70-4e11-9748-4e9ea9a89399">
+<input id="2f624fe9-9720-4120-bd48-d02c40e0519b" name="d83ec496-905d-4316-8eab-17b70c6a0614" type="radio">
+</input><label class="tabbed-label" for="2f624fe9-9720-4120-bd48-d02c40e0519b">
 Case 2  -  <span class="math notranslate nohighlight">\(\Delta = 0\)</span>  </label><div class="tabbed-content docutils">
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -662,8 +665,8 @@ Case 2  -  <span class="math notranslate nohighlight">\(\Delta = 0\)</span>  </l
 </div>
 </div>
 </div>
-<input id="1d622c7b-4a81-4d8a-9f53-5dc1c621dfde" name="bb12f06f-6eb1-4ff3-8e17-03e175be99f0" type="radio">
-</input><label class="tabbed-label" for="1d622c7b-4a81-4d8a-9f53-5dc1c621dfde">
+<input id="15277cb9-d01e-4289-a0a9-1fdbefc51273" name="d83ec496-905d-4316-8eab-17b70c6a0614" type="radio">
+</input><label class="tabbed-label" for="15277cb9-d01e-4289-a0a9-1fdbefc51273">
 Case 3  -  <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span></label><div class="tabbed-content docutils">
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -689,8 +692,8 @@ Case 3  -  <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span></
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="minimum-maximum">
+</section>
+<section id="minimum-maximum">
 <h4>Minimum/ maximum<a class="headerlink" href="#minimum-maximum" title="Permalink to this headline">¶</a></h4>
 <p>Depending on the concavity of the parabola (up or down), there will be a point where the function assumes a minimum or a maximum value. This point is called the <em>vertex</em> of the parabola. This extreme point can be easily determined by the symmetry properties of the function curve.</p>
 <div class="sphinx-bs container pb-4 docutils">
@@ -721,10 +724,10 @@ y_v &amp;= -\frac{(b^2-4ac)}{4a} = -\frac{\Delta}{4a}
 </div>
 </div>
 <p>Now watch this <a class="reference external" href="https://web.microsoftstream.com/video/f64abd8a-9997-4b5e-b11f-0ca09b7603fe">video</a> for a short introduction to complex numbers.</p>
-</div>
-</div>
-</div>
-<div class="section" id="rational-functions">
+</section>
+</section>
+</section>
+<section id="rational-functions">
 <h2>Rational functions<a class="headerlink" href="#rational-functions" title="Permalink to this headline">¶</a></h2>
 <p>Rational functions are defined as quotients of polynomial functions:</p>
 <div class="math notranslate nohighlight">
@@ -753,8 +756,8 @@ y_v &amp;= -\frac{(b^2-4ac)}{4a} = -\frac{\Delta}{4a}
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="power-functions">
+</section>
+<section id="power-functions">
 <h2>Power functions<a class="headerlink" href="#power-functions" title="Permalink to this headline">¶</a></h2>
 <p>Another type of function used in many applications are power functions (sometimes also called power laws). These functions have the functional form:</p>
 <div class="math notranslate nohighlight">
@@ -781,8 +784,8 @@ y_v &amp;= -\frac{(b^2-4ac)}{4a} = -\frac{\Delta}{4a}
 </div>
 </div>
 <p>Watch this <a class="reference external" href="https://web.microsoftstream.com/video/bf7415e1-823f-449e-ace1-e379fac8fe0a">video</a> about additional properties of power law functions.</p>
-</div>
-<div class="section" id="exponential-functions">
+</section>
+<section id="exponential-functions">
 <h2>Exponential functions<a class="headerlink" href="#exponential-functions" title="Permalink to this headline">¶</a></h2>
 <p>Similar to power functions, but with very different properties are the exponential functions:</p>
 <div class="math notranslate nohighlight">
@@ -857,8 +860,8 @@ y_v &amp;= -\frac{(b^2-4ac)}{4a} = -\frac{\Delta}{4a}
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="logarithmic-function">
+</section>
+<section id="logarithmic-function">
 <h2>Logarithmic function<a class="headerlink" href="#logarithmic-function" title="Permalink to this headline">¶</a></h2>
 <p>Let us start this section by understanding what the expression</p>
 <div class="math notranslate nohighlight">
@@ -895,8 +898,8 @@ y_v &amp;= -\frac{(b^2-4ac)}{4a} = -\frac{\Delta}{4a}
 <img alt="../_images/log_base_02.png" src="../_images/log_base_02.png" />
 <p>(here we use the common nomenclature <span class="math notranslate nohighlight">\(\mbox{log}_e x = \mbox{ln}\ x\)</span>).</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

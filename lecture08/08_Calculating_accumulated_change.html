@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>08 - Calculating accumulated change &#8212; Maths for Biologists</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
@@ -37,20 +38,22 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Tutorial 01" href="../tutorials/lecture01/Tutorial_01.html" />
@@ -357,9 +360,9 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="calculating-accumulated-change">
+  <section class="tex2jax_ignore mathjax_ignore" id="calculating-accumulated-change">
 <h1>08 - Calculating accumulated change<a class="headerlink" href="#calculating-accumulated-change" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="series">
+<section id="series">
 <h2>Series<a class="headerlink" href="#series" title="Permalink to this headline">¶</a></h2>
 <p>For every sequence <span class="math notranslate nohighlight">\(\{a_n\}\)</span> of real numbers, it is possible to define another sequence <span class="math notranslate nohighlight">\(\{S_n\}\)</span> for which the elements are given by the sum of the first <span class="math notranslate nohighlight">\(n\)</span> terms of the sequence <span class="math notranslate nohighlight">\(\{a_n\}\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -380,8 +383,8 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 &amp;\sum_{n=0}^\infty x^n \hspace{0.1cm}, \hspace{0.5cm} -1&lt;x&lt;1 \\
 &amp;\sum_{n=0}^\infty (-1)^n \frac{x^{2n+1}}{(2n+1)!} \hspace{0.1cm}, \hspace{0.5cm} x \in \mathbb{R}\end{align}\end{split}\]</div>
 </div>
-</div>
-<div class="section" id="calculating-areas">
+</section>
+<section id="calculating-areas">
 <h2>Calculating areas<a class="headerlink" href="#calculating-areas" title="Permalink to this headline">¶</a></h2>
 <p>The idea of summing infinite quantities can be used to solve the problem of determining the area below a given curve. Let <span class="math notranslate nohighlight">\(f(x)\)</span> be a function defined on the interval <span class="math notranslate nohighlight">\(a \le x \le b\)</span> as:</p>
 <img alt="../_images/sum_areas.png" src="../_images/sum_areas.png" />
@@ -413,8 +416,8 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 \int_a^b kf(x)dx &amp;= k \int_a^b f(x)dx \\
 \int_a^b [f(x) + g(x)]dx &amp;= \int_a^b f(x)dx + \int_a^b g(x)dx \\
 \int_a^b f(x)dx &amp;= \int_a^c f(x)dx + \int_c^b f(x)dx ,\ \  (a \le c \le b) \end{align}\end{split}\]</div>
-</div>
-<div class="section" id="fundamental-theorem-of-calculus">
+</section>
+<section id="fundamental-theorem-of-calculus">
 <h2>Fundamental theorem of Calculus<a class="headerlink" href="#fundamental-theorem-of-calculus" title="Permalink to this headline">¶</a></h2>
 <p>The problem of calculating integrals as limits of sums requires specific methods for each function and becomes quite impractical. Fortunately, this problem can be solved with the very important result that the area problem is intrinsically related to the tangent problem.</p>
 <p>Suppose we define a function <span class="math notranslate nohighlight">\(F(x)\)</span> that gives the area below the curve <span class="math notranslate nohighlight">\(f(u)\)</span> from <span class="math notranslate nohighlight">\(a\)</span> until a variable value <span class="math notranslate nohighlight">\(x\)</span>. By definition:</p>
@@ -438,8 +441,8 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\int_b^c f(x)dx = F(c) - F(b)\]</div>
 <p>Thus the problem of calculating the area below the curve <span class="math notranslate nohighlight">\(f(x)\)</span> from <span class="math notranslate nohighlight">\(b\)</span> to <span class="math notranslate nohighlight">\(c\)</span>, which, by definition, is given by the infinite sum of terms <span class="math notranslate nohighlight">\(f(x_i)\Delta x_i\)</span> (with <span class="math notranslate nohighlight">\(\Delta x_i \rightarrow 0\)</span>), can be reduced to obtaining the antiderivative of <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(F(x)\)</span>, and subtracting the values of this function at points <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(b\)</span>. The main problem then becomes how to calculate the antiderivates of a given function <span class="math notranslate nohighlight">\(f(x)\)</span>, for which different methods can be used.</p>
-</div>
-<div class="section" id="calculating-integrals">
+</section>
+<section id="calculating-integrals">
 <h2>Calculating integrals<a class="headerlink" href="#calculating-integrals" title="Permalink to this headline">¶</a></h2>
 <p>The simplest integrals can be calculated by inverting the differentiation of fundamental functions, as</p>
 <div class="math notranslate nohighlight">
@@ -453,7 +456,7 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\int \mbox{sin}(x)\, dx = -\mbox{cos}(x) + C\]</div>
 <p>This are obtained simply because we know that the derivative of the functions on the righ-hand sides of the equations give exactly the function that is being integrated. When the integrals are not so simple, we must apply other methods to turn them into integrals we know.</p>
-<div class="section" id="integration-by-substitution">
+<section id="integration-by-substitution">
 <h3>Integration by substitution<a class="headerlink" href="#integration-by-substitution" title="Permalink to this headline">¶</a></h3>
 <p>This method consists in finding an appropriate substitution of the variable of integration so that we end up with a simpler integral to calculate.</p>
 <div class="admonition-examples admonition">
@@ -476,8 +479,8 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="integration-by-parts">
+</section>
+<section id="integration-by-parts">
 <h3>Integration by parts<a class="headerlink" href="#integration-by-parts" title="Permalink to this headline">¶</a></h3>
 <p>When integrating by parts, we have to find an appropriate association <span class="math notranslate nohighlight">\((u=u(x), v=v(x))\)</span>, so that:</p>
 <div class="math notranslate nohighlight">
@@ -514,8 +517,8 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="integration-by-partial-fractions">
+</section>
+<section id="integration-by-partial-fractions">
 <h3>Integration by partial fractions<a class="headerlink" href="#integration-by-partial-fractions" title="Permalink to this headline">¶</a></h3>
 <p>If the integral has the form</p>
 <div class="math notranslate nohighlight">
@@ -550,9 +553,9 @@ S_n &amp;= \sum_{i = 0}^n a_i \end{align}\end{split}\]</div>
 </li>
 </ul>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

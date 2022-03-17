@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>02 - Describing shapes and patterns &#8212; Maths for Biologists</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
@@ -37,20 +38,22 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="03 - Analysing change, one step at a time" href="../lecture03/03_Analysing_change%2C_one_step_at_a_time.html" />
@@ -395,9 +398,9 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="describing-shapes-and-patterns">
+  <section class="tex2jax_ignore mathjax_ignore" id="describing-shapes-and-patterns">
 <h1>02   - Describing shapes and patterns<a class="headerlink" href="#describing-shapes-and-patterns" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="measuring-angles">
+<section id="measuring-angles">
 <h2>Measuring angles<a class="headerlink" href="#measuring-angles" title="Permalink to this headline">¶</a></h2>
 <p>An <strong>angle</strong> is a primitive geometrical element, such as the <em>point</em>, the <em>curve</em> or the <em>plane</em>. It is defined as the figure formed by two line segments that extend from a common point.</p>
 <br />
@@ -406,8 +409,8 @@
 <br />
 <p>The two most common units for measuring angles are the <em>degree</em> and the <em>radian</em>.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="6d7aed8c-a1a6-4efb-957d-33a31dd6a2d7" name="cd60b156-a74b-47d4-9330-1ed8d7986fca" type="radio">
-</input><label class="tabbed-label" for="6d7aed8c-a1a6-4efb-957d-33a31dd6a2d7">
+<input checked="checked" id="e1458435-90f7-4ad6-88c0-fad2fddd26f3" name="f1df24a1-fff2-433f-8090-e3ead88eeea8" type="radio">
+</input><label class="tabbed-label" for="e1458435-90f7-4ad6-88c0-fad2fddd26f3">
 Degrees</label><div class="tabbed-content docutils">
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -431,8 +434,8 @@ Degrees</label><div class="tabbed-content docutils">
 </div>
 </div>
 </div>
-<input id="28d44581-5a63-4300-99b6-c45eab7166f8" name="cd60b156-a74b-47d4-9330-1ed8d7986fca" type="radio">
-</input><label class="tabbed-label" for="28d44581-5a63-4300-99b6-c45eab7166f8">
+<input id="16b5f8ec-f21e-4a19-bb16-40ce7806fd51" name="f1df24a1-fff2-433f-8090-e3ead88eeea8" type="radio">
+</input><label class="tabbed-label" for="16b5f8ec-f21e-4a19-bb16-40ce7806fd51">
 Radians</label><div class="tabbed-content docutils">
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -478,8 +481,8 @@ Radians</label><div class="tabbed-content docutils">
 <div class="math notranslate nohighlight">
 \[\theta = 360^{\circ} \longrightarrow \phi = 4 \cdot \frac{\pi}{2} = 2\pi \]</div>
 </div>
-</div>
-<div class="section" id="trigonometric-circle">
+</section>
+<section id="trigonometric-circle">
 <h2>Trigonometric circle<a class="headerlink" href="#trigonometric-circle" title="Permalink to this headline">¶</a></h2>
 <p>We obtain the trigonometric circle by superimposing a circle of radius <span class="math notranslate nohighlight">\(1\)</span> to the cartesian system of coordinates:</p>
 <img alt="../_images/trig_circ.png" src="../_images/trig_circ.png" />
@@ -513,7 +516,7 @@ Radians</label><div class="tabbed-content docutils">
 <div class="math notranslate nohighlight">
 \[\mbox{cos}(\theta) = x.\]</div>
 <p>In other words, the projections of the end of the radial line segment on the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(x\)</span>-axes correspond to the sine and cosine of the angle <span class="math notranslate nohighlight">\(\theta\)</span>. Sine and cosine for this angle can be obtained by the projections even if <span class="math notranslate nohighlight">\(\theta &gt; \displaystyle\frac{\pi}{2}\)</span>.</p>
-<div class="section" id="trigonometric-identities">
+<section id="trigonometric-identities">
 <h3>Trigonometric identities<a class="headerlink" href="#trigonometric-identities" title="Permalink to this headline">¶</a></h3>
 <p>With the aid of the projections on the trigonometric circle, some trigonometric identities become imediately clear. Consider <span class="math notranslate nohighlight">\(\theta &gt; 0\)</span> for counterclockwise angle measurements starting from the <span class="math notranslate nohighlight">\(x\)</span>-axis and <span class="math notranslate nohighlight">\(\theta &lt; 0\)</span> for clockwise measurements. We have:</p>
 <div class="math notranslate nohighlight">
@@ -539,9 +542,9 @@ Radians</label><div class="tabbed-content docutils">
 <p>which is different from <span class="math notranslate nohighlight">\(\mbox{sin}(\theta^2)\)</span>.</p>
 </div>
 <p>Now watch this <a class="reference external" href="https://web.microsoftstream.com/video/b3023026-7d45-4378-a8ee-c166a43eb2e7">video</a> for a different application of the same trigonometric construct.</p>
-</div>
-</div>
-<div class="section" id="trigonometric-functions">
+</section>
+</section>
+<section id="trigonometric-functions">
 <h2>Trigonometric functions<a class="headerlink" href="#trigonometric-functions" title="Permalink to this headline">¶</a></h2>
 <p>Since sine and cosine are defined for any real value of a given angle <span class="math notranslate nohighlight">\(x\)</span> (<span class="math notranslate nohighlight">\(x \in {\rm I\!R}\)</span>), we can define the functions:</p>
 <div class="math notranslate nohighlight">
@@ -568,7 +571,7 @@ Radians</label><div class="tabbed-content docutils">
 <p class="admonition-title">Example</p>
 <p>Since <span class="math notranslate nohighlight">\(\mbox{sin}(x + 2\pi) = \mbox{sin}(x)\)</span> for any value of <span class="math notranslate nohighlight">\(x\)</span> and since <span class="math notranslate nohighlight">\(2\pi\)</span> is the smallest number for which this property holds, then sine is a periodic function with period <span class="math notranslate nohighlight">\(2\pi\)</span>. With the same reasoning, it can be shown that the tangent is periodic with period <span class="math notranslate nohighlight">\(\pi\)</span>.</p>
 </div>
-<div class="section" id="amplitude-and-period">
+<section id="amplitude-and-period">
 <h3>Amplitude and Period<a class="headerlink" href="#amplitude-and-period" title="Permalink to this headline">¶</a></h3>
 <p>From the basic functions <span class="math notranslate nohighlight">\(\mbox{sin}(x)\)</span> or <span class="math notranslate nohighlight">\(\mbox{cos}(x)\)</span> we can write a more general function <span class="math notranslate nohighlight">\(f(x)\)</span> given by</p>
 <div class="math notranslate nohighlight">
@@ -591,20 +594,20 @@ Radians</label><div class="tabbed-content docutils">
 <p class="admonition-title">Example</p>
 <p>The function <span class="math notranslate nohighlight">\(f(x) = 3.6\, \mbox{cos}\left(\displaystyle\frac{\pi}{3}x\right)\)</span> has an amplitude <span class="math notranslate nohighlight">\(A=3.6\)</span>, an angular frequency <span class="math notranslate nohighlight">\(\omega = \displaystyle\frac{\pi}{3}\)</span>, and a period <span class="math notranslate nohighlight">\(T = \displaystyle\frac{2\pi}{\omega} = \displaystyle\frac{2 \pi}{\frac{\pi}{3}} = 6\)</span>.</p>
 </div>
-</div>
-</div>
-<div class="section" id="modelling-complex-periodic-phenomena">
+</section>
+</section>
+<section id="modelling-complex-periodic-phenomena">
 <h2>Modelling complex periodic phenomena<a class="headerlink" href="#modelling-complex-periodic-phenomena" title="Permalink to this headline">¶</a></h2>
 <p>Watch this <a class="reference external" href="https://web.microsoftstream.com/video/02f373a2-621b-4313-a18a-265f5fb65656">video</a> about periodic functions decomposition.</p>
-</div>
-<div class="section" id="transformation-on-graphs">
+</section>
+<section id="transformation-on-graphs">
 <h2>Transformation on graphs<a class="headerlink" href="#transformation-on-graphs" title="Permalink to this headline">¶</a></h2>
 <p>Starting from the elementary functions we have discussed</p>
 <div class="math notranslate nohighlight">
 \[ax+b,\ \ ax^2+bx+c,\ \ \sqrt{x},\ \ \mbox{e}^x,\ \ \mbox{log}(x),\ \ \mbox{sin}(x),\ \ \mbox{cos}(x)\]</div>
 <p>we can introduce several transformations to obtain new functions, by adding or multiplying constants to the argument (function variable) or to the whole function. These are the simplest cases of what is know as <em>function composition</em> with the resulting function called <em>composite function</em>.</p>
 <p>When working with mathematical models, this will help you to understand how the shape of a given function might change by changing one of the parameters, or how to construct a set of functions (that might be useful for your particular model) with small modifications of basic functions.</p>
-<div class="section" id="translations">
+<section id="translations">
 <h3>Translations<a class="headerlink" href="#translations" title="Permalink to this headline">¶</a></h3>
 <p>A given function can be dislocated, either vertically or horiontally, by <em>adding</em> a constant <span class="math notranslate nohighlight">\(c\)</span> to the whole function or to its argument. In general, starting from a function <span class="math notranslate nohighlight">\(f(x)\)</span>, translations are built following the rules:</p>
 <ul>
@@ -680,8 +683,8 @@ Radians</label><div class="tabbed-content docutils">
 <span class="n">interact</span><span class="p">(</span><span class="n">vtrans</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="stretching-compression">
+</section>
+<section id="stretching-compression">
 <h3>Stretching/ Compression<a class="headerlink" href="#stretching-compression" title="Permalink to this headline">¶</a></h3>
 <p>A given function can also be stretched or compressed, either vertically or horiontally, by <em>multiplying</em> a constant <span class="math notranslate nohighlight">\(c\)</span> to the whole function or to its argument. Starting from a function <span class="math notranslate nohighlight">\(f(x)\)</span>, stretchings/compressions are built following the rules:</p>
 <ul>
@@ -760,8 +763,8 @@ Radians</label><div class="tabbed-content docutils">
 <span class="n">interact</span><span class="p">(</span><span class="n">vstetcom</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">3.0</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="reflection">
+</section>
+<section id="reflection">
 <h3>Reflection<a class="headerlink" href="#reflection" title="Permalink to this headline">¶</a></h3>
 <p>If the constant <span class="math notranslate nohighlight">\(c\)</span> multiplying the whole function or its argument has the particular value <span class="math notranslate nohighlight">\(c = -1\)</span>, we will have a <em>reflection</em>. Reflections can be done in relation to the <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span>-axes and they are built, starting from a function <span class="math notranslate nohighlight">\(f(x)\)</span>, following the rules:</p>
 <ul class="simple">
@@ -770,9 +773,9 @@ Radians</label><div class="tabbed-content docutils">
 </ul>
 <p>The figure below shows these two reflections using the function <span class="math notranslate nohighlight">\(f(x) = (x-1)^2\)</span>.</p>
 <img alt="../_images/reflection.png" src="../_images/reflection.png" />
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

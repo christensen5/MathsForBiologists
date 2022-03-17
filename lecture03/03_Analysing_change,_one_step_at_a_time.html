@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>03 - Analysing change, one step at a time &#8212; Maths for Biologists</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
@@ -37,20 +38,22 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="04 - From table arrangements to powerful tools" href="../lecture04/04_From_table_arrangements_to_powerful_tools.html" />
@@ -347,7 +350,7 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="analysing-change-one-step-at-a-time">
+  <section class="tex2jax_ignore mathjax_ignore" id="analysing-change-one-step-at-a-time">
 <h1>03   - Analysing change, one step at a time<a class="headerlink" href="#analysing-change-one-step-at-a-time" title="Permalink to this headline">¶</a></h1>
 <p>Imagine a colony of wasps is founded by a queen with the following pattern of eggs laid:</p>
 <br />  
@@ -435,7 +438,7 @@ N_3 &amp;= RN_2 = R(RN_1) = R[R(RN_0)] = R^3N_0 \\
 \[N_t = N_0R^t.\]</div>
 <p>In problems of population dynamics, <span class="math notranslate nohighlight">\(R\)</span> is called <strong>growth constant</strong> and its value determines the long-term behaviour of the function:</p>
 <img alt="../_images/expgrowth.png" src="../_images/expgrowth.png" />
-<div class="section" id="sequences">
+<section id="sequences">
 <h2>Sequences<a class="headerlink" href="#sequences" title="Permalink to this headline">¶</a></h2>
 <p>The two last problems are examples of <em>sequences</em> for which a formal definition is given as:</p>
 <div class="math notranslate nohighlight">
@@ -505,8 +508,8 @@ N_3 &amp;= RN_2 = R(RN_1) = R[R(RN_0)] = R^3N_0 \\
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="limits">
+</section>
+<section id="limits">
 <h2>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">¶</a></h2>
 <p>In many applications, we are interested to know what is the <em>long-term behaviour</em> of a given sequence <span class="math notranslate nohighlight">\(\{a_n\}\)</span>. For example, is a given population tending towards a stable number of individuals as time passes? In other words, we want to know if there is a number <span class="math notranslate nohighlight">\(L\)</span> for which the sequence tends to as <span class="math notranslate nohighlight">\(n\)</span> increases. To represent this we use the followinf notation:</p>
 <div class="math notranslate nohighlight">
@@ -598,11 +601,11 @@ For this sequence, each term is smaller than the previous (look at the decimal f
 \[\mbox{If } a_0 = -3 \ \mbox{the sequence will be given by: }\ \left\{-3,-1,-3,-1,\ldots \right\}\]</div>
 <p>showing that for any initial value chosen (different from the fixed points), the sequence will oscillate between two values, without a clear tendency to any limit.</p>
 </div>
-</div>
-<div class="section" id="discrete-time-population-models">
+</section>
+<section id="discrete-time-population-models">
 <h2>Discrete-time population models<a class="headerlink" href="#discrete-time-population-models" title="Permalink to this headline">¶</a></h2>
 <p>Sequences are generally used in many applications in Biology. Important examples are models for <strong>seasonally breeding</strong> populations.</p>
-<div class="section" id="density-dependent-population-growth">
+<section id="density-dependent-population-growth">
 <h3>Density-dependent population growth<a class="headerlink" href="#density-dependent-population-growth" title="Permalink to this headline">¶</a></h3>
 <p>As we have seen before, the recursion relation for the exponential growth model is given by <span class="math notranslate nohighlight">\(N_{t+1} = RN_t\)</span>. Rearranging the terms of this equation we have:</p>
 <div class="math notranslate nohighlight">
@@ -632,8 +635,8 @@ N_{t+1} = \frac{N_t}{\frac{1}{R} + \frac{1-\frac{1}{R}}{K}N_t}, \end{align}\end{
 <img alt="../_images/logistic.png" src="../_images/logistic.png" />
 <p>The constant <span class="math notranslate nohighlight">\(K\)</span> is know as <em>carrying capacity</em> and represents the maximum population size a given population can reach at a given place, due to intra-specific competition for resources or space.</p>
 <p>Watch this <a class="reference external" href="https://www.youtube.com/watch?v=Kas0tIxDvrg">video</a> about application of growth models to epidemics.</p>
-</div>
-<div class="section" id="annual-plants">
+</section>
+<section id="annual-plants">
 <h3>Annual plants<a class="headerlink" href="#annual-plants" title="Permalink to this headline">¶</a></h3>
 <p>Suppose a given population of plants produces, on average <span class="math notranslate nohighlight">\(f\)</span> seeds per individual in the reproductive period. Seeds survive winter with a probability <span class="math notranslate nohighlight">\(\sigma\)</span> and germinate on the next season with probability <span class="math notranslate nohighlight">\(\alpha\)</span> (these seeds reach reproductive maturity on the same season). If <span class="math notranslate nohighlight">\(p_n\)</span> is the plant population size on season <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(p_{n+1}\)</span> the population size on the season following <span class="math notranslate nohighlight">\(n\)</span>, we shall have:</p>
 <div class="math notranslate nohighlight">
@@ -647,8 +650,8 @@ p_{n+1} = (\alpha\sigma f)p_n + [\alpha(1-\alpha)\sigma^2 f]p_{n-1} \\
 p_{n+1} = \beta p_n + \gamma p_{n-1}\end{align}\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\beta=\alpha\sigma f\)</span> and <span class="math notranslate nohighlight">\(\gamma = \alpha(1-\alpha)\sigma^2 f\)</span>.</p>
 <p>The previous model is an example of a discrete population model with overlapping populations. Since the term <span class="math notranslate nohighlight">\(n+1\)</span> depends not only on the term <span class="math notranslate nohighlight">\(n\)</span> but also on <span class="math notranslate nohighlight">\(n-1\)</span> this is called a <em>second-order difference equation</em> or <em>delay (or lagged) difference equation</em>.</p>
-</div>
-<div class="section" id="fibonacci-sequence">
+</section>
+<section id="fibonacci-sequence">
 <h3>Fibonacci sequence<a class="headerlink" href="#fibonacci-sequence" title="Permalink to this headline">¶</a></h3>
 <p>The Fibonacci sequence is a sequence defined by the following rule: each number is equal to the sum of the previous two numbers (starting with <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(1\)</span>). Thus the following sequence might be formed:</p>
 <div class="math notranslate nohighlight">
@@ -669,9 +672,9 @@ F_{n+1} &amp;= F_{n} + F_{n-1}\quad \mbox{(Fibonacci seq.)} \\
 <div class="math notranslate nohighlight">
 \[\lim \left(\displaystyle\frac{F_{n+1}}{F_{n}}\right) = \displaystyle\frac{1+\sqrt{5}}{2} \approx 1.618.\]</div>
 <p>The previous number is known as the <em>Golden ratio</em> and it has fascinated mathematicians, phylosophers, and artists since ancient times. Fibonacci numbers and the Golden ratio can be found in several interesting natural patterns, as you can see in this <a class="reference external" href="https://www.youtube.com/watch?v=ahXIMUkSXX0">video</a>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
